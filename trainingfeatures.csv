@@ -1,0 +1,965 @@
+midd_find_relationship,midd_find_hookup,midd_goes_relationship,midd_goes_hookup,midd_lookingfor_relationship,midd_lookingfor_hookup,midd_opps_newpeople,mrtl_potential_date,find_partner,gender,gpa,class,siblings,parents_married,race,housing,year
+4,5,5,2,2,4,3,2,None,Other,2,Lower Class,5,Yes,Hispanic/Latino,Dorm,First Year
+3,4,4,3,2,1,4,2,Friends,Woman,2.16,Lower Class,1,Yes,White,Dorm,Sophomore
+5,3,3,1,1,1,3,5,Friends,Woman,2.5,Lower Class,3,Yes,Asian/Asian American,Dorm,First Year
+4,2,3,2,4,4,3,1,Family,Man,2.5,Upper Class,3,Yes,White,Dorm,Senior
+2,5,5,3,5,4,3,2,Friends,Woman,2.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,4,2,3,4,4,2,1,Other,Man,2.5,Lower Class,3,Yes,White,Dorm,Senior
+3,5,4,3,3,1,4,5,Job/Career,Man,2.5,Middle Class,1,Yes,White,Dorm,First Year
+2,5,2,1,3,1,4,4,Job/Career,Woman,2.5,Middle Class,2,Yes,White,Dorm,Senior
+3,3,4,3,2,1,2,3,Friends,Man,2.5,Upper Middle Class,1,Yes,Other,Dorm,Sophomore
+4,4,1,3,1,1,4,1,Job/Career,Man,2.5,Lower Class,1,Yes,African/African American,Dorm,Senior
+3,3,4,3,1,2,2,3,Friends,Man,2.5,Upper Class,0,Yes,Asian/Asian American,Dorm,Sophomore
+5,5,3,3,4,1,5,1,Friends,Woman,2.6,Lower Class,4,No,Hispanic/Latino,Dorm,Senior
+2,1,3,4,3,3,2,1,Job/Career,Woman,2.6,Lower Class,2,No,African/African American,Dorm,Senior
+1,5,3,4,4,1,1,4,Friends,Woman,2.7,Lower Class,5,No,African/African American,House,Sophomore
+2,3,3,3,4,2,2,3,Family,Woman,2.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,4,3,3,3,4,2,Friends,Woman,2.75,Upper Middle Class,1,Yes,White,Dorm,First Year
+1,5,2,3,4,2,2,1,None,Man,2.75,Lower Class,2,Yes,Hispanic/Latino,House,Sophomore
+3,4,4,4,3,3,4,1,Friends,Woman,2.75,Lower Class,5,No,Asian/Asian American,Dorm,Junior
+2,4,3,3,3,5,2,1,Friends,Man,2.8,Upper Class,1,Yes,White,Dorm,Sophomore
+4,4,3,5,2,4,4,3,Friends,Man,2.8,Upper Middle Class,5,Yes,White,Dorm,Sophomore
+3,4,3,3,3,3,3,2,Friends,Woman,2.8,Lower Class,1,Yes,White,Dorm,Junior
+4,5,5,4,5,2,2,2,Job/Career,Woman,2.8,Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,3,1,3,2,1,None,Man,2.8,Middle Class,1,No,African/African American,House,Sophomore
+2,4,5,5,5,4,3,3,Job/Career,Woman,2.8,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,5,4,5,3,5,4,3,Friends,Woman,2.8,Upper Middle Class,2,Yes,White,House,Senior
+4,4,4,4,3,3,1,1,Job/Career,Man,2.8,Lower Class,4,No,Other,Dorm,Junior
+1,4,3,3,2,2,4,1,Job/Career,Woman,2.8,Middle Class,2,Yes,African/African American,Dorm,Senior
+5,5,5,5,5,5,5,3,Friends,Man,2.8,Upper Class,3,Yes,Other,Dorm,Senior
+3,5,4,4,1,1,3,1,Job/Career,Woman,2.8,Middle Class,2,Yes,White,House,Junior
+3,5,5,5,5,4,4,3,Job/Career,Woman,2.9,Middle Class,1,Yes,White,House,Junior
+2,4,4,4,3,4,4,2,Friends,Woman,2.9,Upper Middle Class,2,No,White,House,Senior
+4,4,4,4,2,2,2,1,Friends,Woman,2.9,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+3,4,1,1,1,1,5,5,Job/Career,Man,2.9,Middle Class,2,Yes,Other,Dorm,Senior
+2,3,3,4,4,3,2,1,Job/Career,Man,2.9,Middle Class,2,Yes,African/African American,Dorm,Senior
+1,1,1,4,4,4,1,2,None,Man,2.9,Lower Class,3,Yes,Hispanic/Latino,House,Junior
+4,5,3,5,1,3,3,4,Job/Career,Man,2.9,Lower Class,3,No,Hispanic/Latino,Dorm,Sophomore
+3,3,2,2,3,3,1,2,Friends,Man,2.95,Lower Class,2,Yes,White,Dorm,Senior
+2,3,2,2,2,2,4,2,Job/Career,Man,2.98,Upper Middle Class,0,No,African/African American,Dorm,Senior
+2,4,2,2,1,1,3,1,None,Woman,2.98,Middle Class,0,No,Asian/Asian American,House,Senior
+1,1,1,1,1,1,1,1,Friends,Woman,2.98,Middle Class,1,Yes,African/African American,Dorm,Senior
+3,3,3,3,3,3,3,3,Friends,Man,3,Middle Class,2,Yes,African/African American,Dorm,First Year
+4,2,1,2,1,5,2,1,None,Man,3,Middle Class,2,Yes,White,Dorm,Senior
+5,5,5,2,3,4,2,3,Graduate School,Man,3,Middle Class,1,Yes,Other,Dorm,First Year
+3,4,4,4,1,1,4,3,Graduate School,Man,3,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,5,5,5,5,5,4,Friends,Man,3,Upper Middle Class,1,Yes,White,Dorm,Junior
+1,4,1,4,1,1,2,1,Job/Career,Woman,3,Lower Class,5,No,Other,House,Sophomore
+5,5,5,2,5,1,5,5,Middlebury,Man,3,Upper Class,1,Yes,Other,Dorm,First Year
+3,3,1,1,3,3,3,1,Graduate School,Man,3,Upper Class,3,No,Other,Dorm,Sophomore
+4,4,5,4,5,3,5,1,Friends,Man,3,Middle Class,5,Yes,White,Dorm,Sophomore
+5,5,4,5,5,5,4,1,Friends,Woman,3,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,First Year
+2,5,5,3,5,3,3,3,Job/Career,Woman,3,Middle Class,1,Yes,Other,Dorm,First Year
+2,4,2,3,5,3,2,3,Friends,Woman,3,Lower Class,1,Yes,Hispanic/Latino,Dorm,First Year
+5,5,3,3,1,1,4,1,Friends,Woman,3,Lower Class,3,Yes,Asian/Asian American,Dorm,First Year
+3,5,3,4,1,1,4,1,Other,Man,3,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,4,5,4,3,3,4,2,Job/Career,Man,3,Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,3,3,4,1,2,1,Friends,Woman,3,Middle Class,1,No,White,Dorm,Senior
+5,5,5,5,1,1,5,3,Job/Career,Woman,3,Upper Middle Class,2,Yes,White,Dorm,Junior
+5,5,5,5,1,1,5,5,Middlebury,Woman,3,Middle Class,3,Yes,White,Dorm,Junior
+4,5,4,5,1,5,5,1,Friends,Man,3,Middle Class,0,No,Other,Dorm,First Year
+3,4,4,4,4,4,4,2,Friends,Woman,3,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,4,4,4,5,4,2,3,Middlebury,Woman,3,Middle Class,1,Yes,White,Dorm,Junior
+3,4,3,2,3,1,2,2,Graduate School,Woman,3,Lower Class,1,No,Other,Dorm,First Year
+3,3,4,2,4,2,4,1,None,Woman,3,Lower Class,1,Yes,Other,Dorm,Junior
+2,3,4,3,2,1,2,2,Job/Career,Woman,3,Lower Class,2,Yes,Asian/Asian American,Dorm,First Year
+3,4,4,4,5,4,2,4,Friends,Man,3,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,4,3,2,3,3,3,4,Friends,Woman,3,Middle Class,1,Yes,Other,Dorm,Junior
+3,4,1,1,1,1,4,4,Friends,Woman,3,Upper Middle Class,2,Yes,African/African American,Dorm,Senior
+1,4,3,3,5,1,3,3,Friends,Other,3,Lower Class,1,Yes,Other,House,Sophomore
+5,5,5,5,5,3,5,3,Graduate School,Woman,3,Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,4,2,2,3,3,Friends,Man,3,Upper Middle Class,3,Yes,White,Dorm,First Year
+5,5,5,5,3,3,4,1,Friends,Man,3,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,3,3,3,3,3,3,3,None,Man,3,Middle Class,0,Yes,Other,Dorm,Junior
+3,3,2,3,3,2,2,2,Job/Career,Man,3,Lower Class,1,Yes,Asian/Asian American,Dorm,First Year
+1,4,2,2,5,2,2,1,Friends,Man,3,Upper Middle Class,1,Yes,Other,House,Junior
+3,5,3,3,2,2,2,3,Friends,Woman,3,Middle Class,1,Yes,African/African American,Dorm,First Year
+3,5,4,2,4,1,5,5,Friends,Woman,3,Lower Class,1,No,Other,Dorm,First Year
+4,5,5,5,3,3,3,1,Friends,Woman,3,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,4,3,3,2,2,2,3,Friends,Woman,3,Upper Middle Class,1,Yes,White,House,Junior
+4,4,2,2,4,4,2,2,Friends,Man,3,Upper Middle Class,2,Yes,White,Dorm,Junior
+3,3,2,2,4,2,4,4,Friends,Man,3,Middle Class,2,Yes,White,Dorm,First Year
+4,4,3,3,4,2,3,2,Job/Career,Man,3,Middle Class,1,Yes,White,Dorm,Junior
+5,5,3,3,1,1,3,3,None,Man,3,Lower Class,1,No,Hispanic/Latino,Dorm,Sophomore
+3,4,3,4,2,4,2,1,Friends,Woman,3,Lower Class,3,No,Hispanic/Latino,House,Senior
+1,4,3,3,4,1,2,2,Friends,Man,3,Upper Class,1,Yes,Asian/Asian American,Dorm,First Year
+2,4,4,4,2,2,3,2,Friends,Woman,3,Lower Class,2,Yes,Other,Dorm,Senior
+3,5,3,4,4,4,3,1,Friends,Man,3,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,3,2,2,4,2,1,2,Job/Career,Man,3,Upper Middle Class,1,Yes,African/African American,Dorm,Senior
+2,5,4,4,4,4,4,1,None,Man,3,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,4,4,4,4,4,2,Middlebury,Woman,3,Upper Class,2,Yes,White,Dorm,Sophomore
+4,5,4,5,5,2,3,2,Friends,Woman,3,Upper Middle Class,1,No,White,Off Campus,Senior
+3,3,3,3,3,3,4,3,Friends,Woman,3,Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+3,5,3,3,3,1,2,2,Job/Career,Woman,3,Middle Class,0,Yes,Other,Dorm,First Year
+2,4,1,4,2,2,3,5,Graduate School,Other,3,Lower Class,1,Yes,Asian/Asian American,Dorm,First Year
+3,4,1,3,2,3,2,1,Job/Career,Woman,3,Middle Class,1,Yes,White,Dorm,Junior
+2,4,4,4,4,2,3,3,Friends,Man,3,Lower Class,1,No,Hispanic/Latino,Dorm,First Year
+3,3,3,3,1,1,3,5,Other,Woman,3,Lower Class,5,Yes,Asian/Asian American,Dorm,First Year
+4,4,3,2,1,5,3,1,Friends,Man,3,Middle Class,1,Yes,Hispanic/Latino,Dorm,First Year
+3,4,4,4,4,2,3,3,Job/Career,Woman,3,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+5,5,5,5,1,1,5,2,Job/Career,Woman,3.01,Upper Middle Class,2,Yes,White,Off Campus,Senior
+1,5,4,4,3,3,2,1,Friends,Woman,3.03,Upper Class,2,Yes,White,Dorm,Sophomore
+4,5,5,4,5,3,4,3,Friends,Woman,3.03,Upper Class,3,Yes,White,Dorm,Sophomore
+1,5,1,1,1,5,1,1,None,Woman,3.05,Lower Class,5,Yes,Other,Off Campus,Senior
+4,4,4,4,3,3,4,2,Middlebury,Man,3.1,Upper Middle Class,2,Yes,White,House,Senior
+3,3,2,3,2,3,3,1,None,Woman,3.1,Upper Middle Class,0,Yes,Other,Dorm,Senior
+2,2,3,3,5,4,3,1,Friends,Woman,3.1,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,4,4,4,5,3,2,3,Friends,Man,3.1,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+1,5,5,5,4,5,2,2,Job/Career,Woman,3.1,Upper Middle Class,1,Yes,White,Dorm,Junior
+5,5,5,5,3,3,4,2,Friends,Woman,3.1,Middle Class,1,Yes,White,House,Junior
+4,4,4,4,3,4,4,1,Friends,Woman,3.1,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,2,2,2,3,2,3,Friends,Woman,3.1,Lower Class,4,No,Other,Dorm,Senior
+1,5,1,4,1,1,2,1,Friends,Woman,3.1,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+4,4,5,3,1,1,5,1,None,Woman,3.1,Upper Middle Class,1,Yes,White,Dorm,Junior
+2,5,3,4,4,4,3,1,Family,Woman,3.1,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,5,4,3,3,4,2,Middlebury,Man,3.1,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+4,4,4,4,3,1,4,2,Friends,Woman,3.1,Upper Middle Class,3,Yes,Other,Dorm,Sophomore
+4,4,4,4,3,3,4,2,Other,Woman,3.1,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,4,3,3,5,1,4,4,Friends,Man,3.1,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,5,4,3,3,3,2,2,Friends,Man,3.1,Upper Middle Class,4,Yes,White,Dorm,Sophomore
+4,3,3,3,3,3,2,1,Friends,Man,3.1,Upper Class,1,Yes,White,Dorm,Sophomore
+3,4,3,3,4,4,3,2,Job/Career,Man,3.1,Upper Middle Class,1,No,African/African American,Dorm,Senior
+2,2,2,2,4,4,2,4,Job/Career,Man,3.1,Upper Middle Class,4,Yes,Asian/Asian American,Dorm,Senior
+2,5,4,4,1,3,3,1,Job/Career,Woman,3.11,Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+2,5,5,5,1,1,2,3,Other,Woman,3.12,Lower Class,0,No,Hispanic/Latino,House,Sophomore
+2,4,3,5,3,4,2,1,Job/Career,Man,3.13,Lower Class,3,No,African/African American,House,Junior
+1,5,1,5,1,5,1,1,Friends,Woman,3.15,Lower Class,1,Yes,African/African American,Dorm,Senior
+5,5,5,5,3,3,4,4,Job/Career,Man,3.2,Lower Class,2,Yes,Hispanic/Latino,Dorm,Sophomore
+4,4,2,2,3,3,2,2,Friends,Man,3.2,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,5,4,4,2,2,3,4,Friends,Woman,3.2,Middle Class,0,Yes,White,Dorm,Senior
+4,4,3,3,1,1,4,2,Friends,Woman,3.2,Upper Middle Class,0,Yes,White,House,Senior
+3,4,4,3,3,1,3,3,Friends,Woman,3.2,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,3,4,4,3,2,2,Friends,Man,3.2,Upper Middle Class,0,Yes,White,Dorm,First Year
+4,5,4,4,1,1,4,3,Other,Woman,3.2,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,5,2,3,1,1,2,1,Friends,Woman,3.2,Middle Class,1,Yes,White,Dorm,Junior
+4,5,5,3,1,3,4,4,Job/Career,Man,3.2,Middle Class,3,Yes,White,Dorm,First Year
+4,3,4,2,5,5,1,4,Friends,Man,3.2,Upper Class,1,No,White,House,Junior
+4,4,5,3,1,1,4,4,Graduate School,Man,3.2,Upper Class,2,Yes,White,Dorm,Sophomore
+4,4,2,2,1,4,4,1,Friends,Man,3.2,Upper Class,2,Yes,White,Off Campus,Senior
+1,1,3,2,5,1,1,4,Friends,Man,3.2,Lower Class,3,Yes,Other,Dorm,Senior
+4,4,4,4,5,3,3,3,Middlebury,Woman,3.2,Upper Class,0,No,White,Dorm,Sophomore
+1,1,3,3,1,1,3,3,Friends,Man,3.2,Upper Middle Class,2,Yes,White,Dorm,Junior
+3,3,3,3,3,3,3,3,Friends,Man,3.2,Upper Middle Class,2,No,White,Dorm,First Year
+2,4,4,4,3,4,2,1,Friends,Woman,3.2,Upper Class,3,Yes,White,Dorm,Sophomore
+3,4,4,4,5,4,4,2,Friends,Man,3.2,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,2,2,3,3,4,4,Friends,Man,3.2,Upper Middle Class,1,Yes,White,House,Senior
+4,4,4,3,2,1,4,3,Job/Career,Woman,3.2,Middle Class,0,Yes,White,Dorm,Junior
+1,1,3,2,4,2,2,2,Friends,Man,3.2,Lower Class,2,No,Hispanic/Latino,Dorm,Senior
+2,3,4,3,4,4,1,3,Friends,Woman,3.2,Upper Middle Class,1,Yes,White,House,Sophomore
+3,5,3,3,4,3,2,3,Friends,Man,3.2,Lower Class,3,No,African/African American,Dorm,Sophomore
+4,4,4,4,4,4,5,1,None,Man,3.2,Upper Class,1,Yes,Other,Dorm,First Year
+2,4,5,5,4,3,3,3,Middlebury,Woman,3.2,Middle Class,1,Yes,White,Dorm,Sophomore
+4,5,4,4,3,4,4,2,Graduate School,Man,3.2,Upper Middle Class,1,Yes,Other,Dorm,First Year
+2,4,2,4,3,3,2,1,Friends,Man,3.2,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,2,2,3,1,2,3,Friends,Man,3.2,Middle Class,0,Yes,Asian/Asian American,Dorm,Senior
+4,5,5,4,5,5,4,3,Middlebury,Man,3.2,Upper Class,0,Yes,Other,Dorm,Sophomore
+4,4,5,4,3,2,3,2,Middlebury,Woman,3.2,Middle Class,2,Yes,White,Dorm,Junior
+4,5,5,4,5,5,4,3,Job/Career,Man,3.2,Middle Class,2,Yes,White,Dorm,Sophomore
+3,4,4,4,4,4,3,2,Friends,Man,3.2,Lower Class,4,Yes,Hispanic/Latino,Dorm,Senior
+3,4,2,3,4,4,4,3,Friends,Man,3.2,Upper Class,4,Yes,White,Dorm,Sophomore
+2,5,5,3,1,1,3,2,Friends,Woman,3.2,Lower Class,0,No,Hispanic/Latino,Dorm,Senior
+4,4,3,3,1,1,4,3,Friends,Man,3.2,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,5,3,4,5,2,2,3,Friends,Man,3.21,Lower Class,5,No,White,Dorm,Junior
+2,1,2,1,1,1,4,5,Friends,Woman,3.22,Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+4,4,3,3,5,5,5,1,None,Man,3.22,Lower Class,1,No,Other,Dorm,Senior
+4,4,3,3,4,2,4,3,Graduate School,Man,3.23,Middle Class,0,No,Other,Dorm,Junior
+3,5,2,4,2,4,5,1,Friends,Woman,3.25,Middle Class,2,Yes,White,Dorm,Senior
+2,2,4,4,4,4,2,1,Friends,Man,3.25,Upper Class,2,Yes,White,Off Campus,Senior
+4,5,5,5,5,1,5,3,Friends,Man,3.25,Middle Class,1,Yes,Other,House,Sophomore
+4,4,4,3,2,2,4,2,Job/Career,Woman,3.25,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+3,5,5,4,4,3,4,2,Friends,Woman,3.25,Upper Class,1,Yes,White,House,Sophomore
+3,4,4,4,5,3,2,4,Graduate School,Man,3.26,Middle Class,2,Yes,White,Dorm,Sophomore
+5,5,5,3,3,1,5,4,Middlebury,Man,3.26,Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,4,3,1,4,4,Friends,Man,3.27,Middle Class,5,No,White,Dorm,Junior
+2,4,3,3,4,5,2,1,None,Woman,3.27,Upper Middle Class,1,Yes,White,House,Sophomore
+4,5,2,5,1,2,4,1,Friends,Man,3.3,Upper Middle Class,0,No,African/African American,House,Senior
+3,1,1,1,4,4,4,5,Other,Man,3.3,Upper Middle Class,1,No,White,Dorm,Sophomore
+2,4,5,4,4,4,2,3,Job/Career,Man,3.3,Middle Class,3,No,White,House,Junior
+4,4,4,4,3,4,2,4,Job/Career,Woman,3.3,Middle Class,2,Yes,White,Dorm,Senior
+2,5,4,4,3,3,2,3,Friends,Woman,3.3,Upper Class,2,Yes,White,House,Senior
+4,4,4,4,3,3,2,1,Friends,Woman,3.3,Upper Middle Class,2,Yes,White,Off Campus,Senior
+4,5,5,5,3,3,4,4,Friends,Woman,3.3,Upper Middle Class,1,Yes,White,House,Junior
+4,4,4,4,2,2,4,2,Middlebury,Man,3.3,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,4,3,3,4,3,2,Friends,Man,3.3,Upper Middle Class,3,Yes,White,Dorm,Junior
+3,4,3,3,3,3,3,3,Family,Woman,3.3,Upper Middle Class,3,Yes,White,House,Senior
+5,5,3,5,2,4,5,1,Friends,Man,3.3,Upper Class,0,Yes,Other,Dorm,First Year
+4,5,5,4,5,3,2,2,Job/Career,Woman,3.3,Middle Class,2,Yes,White,House,Sophomore
+4,4,4,4,4,4,4,2,Job/Career,Man,3.3,Middle Class,2,Yes,White,Dorm,Sophomore
+2,4,5,4,5,4,4,3,Job/Career,Woman,3.3,Upper Middle Class,1,No,Other,Dorm,First Year
+4,3,2,2,2,2,2,4,Friends,Woman,3.3,Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+1,5,1,1,3,3,3,1,None,Woman,3.3,Middle Class,2,Yes,Asian/Asian American,Dorm,Junior
+3,4,4,4,3,2,2,1,Friends,Woman,3.3,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,4,5,5,5,1,3,4,Friends,Woman,3.3,Lower Class,1,Yes,Other,Dorm,Junior
+4,5,4,5,2,4,5,1,Friends,Woman,3.3,Lower Class,4,No,White,Dorm,Junior
+5,5,4,4,1,1,2,4,Friends,Woman,3.3,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+5,5,5,5,2,3,4,4,Friends,Man,3.3,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,2,4,4,4,4,1,2,Friends,Man,3.3,Upper Middle Class,1,Yes,Hispanic/Latino,Dorm,Sophomore
+4,5,4,5,4,4,4,2,Friends,Man,3.3,Middle Class,5,No,White,Dorm,Senior
+4,4,5,5,3,5,4,3,Friends,Man,3.3,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+2,2,1,1,1,1,4,3,Friends,Woman,3.3,Lower Class,1,No,White,Dorm,Sophomore
+4,4,4,4,5,4,2,4,Job/Career,Man,3.3,Upper Class,0,Yes,White,Dorm,Junior
+2,1,5,4,3,2,4,1,Job/Career,Woman,3.3,Upper Middle Class,0,Yes,Asian/Asian American,Off Campus,Junior
+3,3,3,3,1,1,1,4,Other,Woman,3.3,Middle Class,0,Yes,White,Dorm,First Year
+4,4,4,4,4,3,5,2,Job/Career,Man,3.3,Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,5,5,3,3,4,3,Middlebury,Man,3.3,Middle Class,1,Yes,White,House,Junior
+4,4,4,4,3,4,2,2,Friends,Man,3.3,Upper Middle Class,3,No,White,Dorm,Senior
+4,5,5,5,2,4,4,3,Graduate School,Woman,3.3,Upper Middle Class,2,Yes,White,Dorm,First Year
+5,5,5,5,5,1,5,1,Friends,Man,3.3,Upper Middle Class,1,Yes,White,Dorm,Senior
+5,5,3,5,3,4,5,2,Middlebury,Man,3.3,Upper Middle Class,2,Yes,White,House,Junior
+4,5,4,4,1,1,3,2,Other,Woman,3.3,Middle Class,2,No,White,Dorm,Junior
+3,5,5,5,2,2,4,4,Graduate School,Woman,3.3,Middle Class,1,Yes,African/African American,Dorm,First Year
+2,4,2,4,5,2,1,4,Friends,Man,3.3,Middle Class,2,Yes,Other,Dorm,Junior
+4,4,4,4,4,3,3,2,Friends,Woman,3.3,Middle Class,2,Yes,White,Dorm,Junior
+2,5,4,4,4,3,3,1,Friends,Woman,3.3,Upper Class,1,Yes,White,Dorm,Senior
+3,4,5,5,5,5,3,2,Friends,Woman,3.3,Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,2,1,2,1,2,4,Friends,Woman,3.3,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,5,5,1,1,1,4,1,Graduate School,Woman,3.3,Lower Class,4,No,White,House,Sophomore
+4,4,4,4,3,2,4,3,Job/Career,Woman,3.3,Lower Class,0,No,White,Dorm,Sophomore
+3,3,4,4,4,4,3,2,Friends,Woman,3.3,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,5,4,5,4,3,2,Graduate School,Man,3.3,Upper Middle Class,1,Yes,White,Dorm,First Year
+1,4,1,3,5,2,1,3,Friends,Man,3.3,Middle Class,1,Yes,White,Dorm,Junior
+4,5,3,4,1,1,4,4,Other,Man,3.3,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,5,4,4,3,2,3,2,Friends,Woman,3.3,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,4,3,3,3,4,4,2,Job/Career,Man,3.3,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+1,4,3,1,3,1,2,4,Graduate School,Woman,3.3,Upper Middle Class,3,Yes,African/African American,Dorm,Senior
+3,4,3,3,4,3,4,4,Middlebury,Man,3.3,Upper Middle Class,0,Yes,White,Dorm,Junior
+2,5,4,5,3,4,3,1,Friends,Woman,3.3,Middle Class,2,No,White,Dorm,Sophomore
+2,4,3,3,4,3,4,5,Family,Woman,3.3,Upper Class,2,Yes,Other,Off Campus,Junior
+1,5,1,5,4,1,4,4,Friends,Man,3.3,Lower Class,2,Yes,White,Off Campus,Sophomore
+4,5,4,4,3,3,5,3,Job/Career,Woman,3.33,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,3,4,4,3,3,4,1,Friends,Man,3.33,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,3,3,2,2,3,1,None,Woman,3.33,Middle Class,1,Yes,White,Dorm,Senior
+2,4,4,4,4,3,4,1,Friends,Woman,3.33,Upper Middle Class,1,Yes,White,Off Campus,Senior
+2,5,3,3,4,2,2,2,Family,Woman,3.33,Lower Class,1,No,White,Dorm,Sophomore
+2,4,5,4,5,3,3,2,Friends,Woman,3.33,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,5,4,4,1,1,3,2,Friends,Woman,3.33,Middle Class,1,Yes,Other,Dorm,Senior
+4,4,3,2,4,4,4,1,Friends,Man,3.33,Upper Class,1,No,White,Dorm,Junior
+3,4,3,2,4,2,2,3,Family,Woman,3.33,Lower Class,1,No,White,Dorm,Sophomore
+1,5,1,3,1,1,4,1,Job/Career,Man,3.33,Lower Class,1,No,Hispanic/Latino,House,Senior
+2,3,2,2,2,2,2,2,Other,Man,3.33,Upper Class,2,Yes,White,Dorm,First Year
+2,5,4,4,4,4,3,3,Friends,Woman,3.33,Lower Class,2,Yes,Hispanic/Latino,House,Junior
+4,5,4,4,3,3,4,2,Friends,Woman,3.34,Middle Class,3,Yes,White,Off Campus,Senior
+4,4,3,3,1,1,4,2,Friends,Woman,3.35,Upper Middle Class,2,Yes,Hispanic/Latino,Dorm,Senior
+1,3,3,4,4,2,2,5,Job/Career,Man,3.35,Middle Class,2,No,White,Dorm,Senior
+4,4,4,4,2,1,4,2,Friends,Man,3.37,Upper Middle Class,1,Yes,White,House,Junior
+3,4,3,4,4,3,2,3,Friends,Man,3.37,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,3,3,4,3,3,4,3,Friends,Man,3.4,Lower Class,0,No,Hispanic/Latino,Dorm,Junior
+1,2,3,5,4,5,2,1,Job/Career,Man,3.4,Lower Class,3,Yes,African/African American,Dorm,Sophomore
+5,5,2,4,1,3,4,1,Friends,Woman,3.4,Upper Middle Class,2,No,White,House,Senior
+3,4,3,3,3,4,4,2,Friends,Woman,3.4,Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,4,4,3,3,4,3,Job/Career,Woman,3.4,Lower Class,1,Yes,White,Dorm,Sophomore
+3,4,4,4,2,1,3,2,Friends,Woman,3.4,Upper Class,2,Yes,White,Dorm,Sophomore
+5,5,5,1,3,3,5,3,Friends,Man,3.4,Upper Class,2,Yes,White,Dorm,Sophomore
+3,4,4,4,4,4,2,2,Graduate School,Man,3.4,Upper Middle Class,2,Yes,White,House,Junior
+3,3,3,3,3,3,3,3,Friends,Other,3.4,Lower Class,1,Yes,Other,Dorm,Senior
+2,4,4,4,4,4,3,3,Friends,Woman,3.4,Upper Class,3,Yes,White,Off Campus,Senior
+2,2,3,2,4,2,4,2,Job/Career,Man,3.4,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,4,3,3,4,3,3,2,Friends,Woman,3.4,Lower Class,1,Yes,Asian/Asian American,Dorm,First Year
+3,4,4,4,3,3,4,2,Friends,Woman,3.4,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+5,5,5,5,3,3,5,4,Job/Career,Woman,3.4,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,3,3,2,4,2,1,Friends,Man,3.4,Upper Class,2,Yes,White,Dorm,Sophomore
+3,5,5,5,5,5,5,1,Graduate School,Man,3.4,Upper Middle Class,1,Yes,White,Dorm,First Year
+1,4,1,1,1,1,3,2,Friends,Woman,3.4,Lower Class,1,No,African/African American,Dorm,Senior
+3,5,3,5,3,3,3,1,Friends,Woman,3.4,Upper Middle Class,2,Yes,Hispanic/Latino,House,Junior
+3,4,4,4,5,4,2,3,Friends,Man,3.4,Upper Class,2,Yes,White,Dorm,Sophomore
+3,4,5,2,4,2,2,4,Friends,Man,3.4,Upper Middle Class,2,Yes,White,House,Junior
+1,4,2,2,3,2,2,1,None,Woman,3.4,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,4,4,2,2,3,1,Friends,Woman,3.4,Middle Class,3,Yes,Asian/Asian American,Dorm,Senior
+3,4,3,4,2,2,3,4,Friends,Woman,3.4,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,First Year
+4,5,3,3,4,4,4,1,Friends,Woman,3.4,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,5,5,2,2,4,2,Friends,Woman,3.4,Middle Class,2,Yes,White,Dorm,Senior
+2,5,3,5,3,4,2,1,Friends,Woman,3.4,Middle Class,2,Yes,White,Dorm,Senior
+3,4,4,4,3,4,3,1,Friends,Man,3.4,Middle Class,0,Yes,Other,House,Sophomore
+4,4,4,4,4,4,4,1,Friends,Man,3.4,Upper Middle Class,1,Yes,White,Dorm,Junior
+2,5,4,3,4,3,2,3,Friends,Woman,3.4,Middle Class,1,Yes,White,House,Senior
+2,4,4,4,3,3,2,1,Friends,Woman,3.4,Upper Class,1,Yes,White,Dorm,Sophomore
+2,4,1,3,1,1,3,1,Job/Career,Man,3.4,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,4,4,2,2,4,2,Friends,Man,3.4,Middle Class,1,Yes,White,House,Sophomore
+3,4,5,5,3,4,4,3,Job/Career,Woman,3.4,Upper Class,3,Yes,White,Dorm,Sophomore
+4,4,3,3,3,3,4,2,Job/Career,Woman,3.4,Upper Middle Class,2,Yes,Other,Dorm,Junior
+1,4,2,4,5,4,2,1,Friends,Woman,3.4,Upper Middle Class,1,No,White,Dorm,Senior
+2,3,1,3,3,5,3,1,Friends,Woman,3.4,Lower Class,2,No,Hispanic/Latino,Dorm,Sophomore
+4,5,4,4,3,3,3,2,Friends,Woman,3.4,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,5,4,4,3,3,4,2,Friends,Woman,3.4,Lower Class,2,Yes,Other,House,Junior
+2,4,4,4,5,4,2,4,Friends,Woman,3.4,Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,4,3,4,4,4,2,3,Friends,Man,3.4,Upper Middle Class,3,No,White,Dorm,First Year
+4,3,4,3,2,1,5,3,Job/Career,Woman,3.4,Middle Class,1,Yes,White,Dorm,Sophomore
+4,5,5,4,4,2,4,1,Middlebury,Man,3.4,Upper Middle Class,2,Yes,White,House,Senior
+3,4,3,5,2,2,2,1,Job/Career,Man,3.4,Upper Class,0,Yes,White,House,Junior
+4,4,3,2,2,4,3,1,Job/Career,Man,3.4,Upper Middle Class,3,Yes,White,Dorm,Senior
+2,3,4,4,3,3,2,2,Graduate School,Woman,3.4,Lower Class,2,No,White,Dorm,Senior
+3,2,3,3,2,2,3,2,Job/Career,Man,3.4,Middle Class,2,Yes,White,Dorm,Senior
+4,4,4,3,4,4,4,2,Middlebury,Man,3.4,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,4,3,3,3,3,3,2,Friends,Woman,3.4,Upper Middle Class,2,Yes,White,House,Sophomore
+2,5,5,3,3,3,5,1,Friends,Woman,3.4,Lower Class,1,Yes,White,Dorm,Senior
+3,4,4,3,4,1,3,3,Friends,Woman,3.4,Upper Middle Class,2,Yes,White,Dorm,Senior
+2,5,4,4,5,4,4,2,Friends,Woman,3.4,Upper Middle Class,3,Yes,White,Off Campus,Senior
+2,2,2,4,3,5,2,1,Job/Career,Man,3.4,Middle Class,0,Yes,African/African American,Dorm,Senior
+1,5,4,4,5,3,4,1,Friends,Man,3.4,Lower Class,1,Yes,White,Dorm,First Year
+4,5,5,3,2,2,5,2,Job/Career,Woman,3.4,Upper Middle Class,1,Yes,White,Dorm,First Year
+5,5,4,3,1,1,5,2,Friends,Man,3.4,Upper Middle Class,4,Yes,White,Dorm,Senior
+5,4,5,3,1,4,4,1,Friends,Woman,3.4,Upper Middle Class,1,Yes,White,Dorm,Junior
+5,5,4,4,3,3,4,4,Friends,Woman,3.4,Upper Middle Class,2,Yes,White,Off Campus,Junior
+1,4,3,4,2,5,4,1,Friends,Woman,3.4,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,3,3,5,5,3,1,Friends,Man,3.41,Upper Middle Class,1,No,White,Dorm,First Year
+2,4,3,4,3,4,4,1,Job/Career,Woman,3.42,Upper Class,1,Yes,White,Off Campus,Junior
+2,4,4,4,3,4,2,1,Friends,Woman,3.43,Upper Middle Class,2,Yes,White,Dorm,Junior
+3,2,3,4,5,5,4,1,Friends,Man,3.44,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+3,5,3,3,3,3,5,1,Friends,Woman,3.44,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,3,4,2,4,3,1,Friends,Man,3.45,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,5,4,3,1,1,2,2,Job/Career,Woman,3.45,Upper Middle Class,1,No,White,Dorm,Senior
+4,4,3,4,3,4,2,2,Friends,Man,3.45,Upper Middle Class,1,No,White,Dorm,Senior
+2,4,3,3,2,3,2,2,Friends,Woman,3.45,Upper Middle Class,1,Yes,White,House,Senior
+4,4,5,4,5,5,4,1,Friends,Man,3.45,Upper Middle Class,1,Yes,White,Dorm,Senior
+2,5,4,4,3,3,1,3,Friends,Woman,3.45,Upper Class,1,Yes,White,Dorm,Junior
+2,3,4,3,4,1,2,3,Friends,Woman,3.46,Upper Middle Class,1,Yes,White,Dorm,Senior
+1,4,3,4,4,4,3,5,Friends,Woman,3.48,Upper Middle Class,2,Yes,White,Dorm,Senior
+3,3,4,4,4,3,2,1,Other,Woman,3.5,Middle Class,1,Yes,White,House,Senior
+3,4,3,4,3,4,2,2,Friends,Man,3.5,Upper Class,2,Yes,White,Dorm,First Year
+4,4,5,5,4,3,4,3,Job/Career,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,4,4,4,4,4,3,2,None,Woman,3.5,Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,4,5,3,5,3,2,Friends,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,3,4,4,1,4,2,3,Friends,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,4,4,4,3,3,3,1,Friends,Woman,3.5,Upper Middle Class,3,Yes,White,House,Junior
+2,4,3,1,4,2,2,2,Friends,Man,3.5,Lower Class,1,No,White,Dorm,First Year
+4,4,4,3,2,2,4,4,None,Woman,3.5,Upper Middle Class,1,No,White,Dorm,First Year
+3,3,2,4,1,1,4,2,Other,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,5,2,1,4,5,3,2,Friends,Man,3.5,Middle Class,0,Yes,White,Dorm,Sophomore
+2,4,3,3,4,3,4,2,Family,Woman,3.5,Lower Class,1,Yes,Other,Dorm,Senior
+4,4,2,2,1,1,4,1,Friends,Man,3.5,Lower Class,0,Yes,Other,Dorm,Junior
+3,4,4,3,2,2,3,4,Friends,Woman,3.5,Upper Middle Class,2,No,White,Dorm,Senior
+3,3,4,4,3,4,3,1,Job/Career,Man,3.5,Upper Class,3,Yes,White,Off Campus,Senior
+3,4,4,4,1,1,2,2,Job/Career,Man,3.5,Upper Class,3,Yes,White,Dorm,Senior
+5,5,3,3,1,1,4,3,Friends,Woman,3.5,Upper Middle Class,2,No,White,Dorm,Senior
+3,4,5,5,4,4,2,2,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,House,Senior
+3,3,5,5,5,5,3,1,Friends,Man,3.5,Middle Class,4,No,Other,Dorm,First Year
+2,3,2,2,4,4,4,2,Friends,Man,3.5,Upper Middle Class,1,Yes,White,House,Junior
+4,5,4,5,2,2,5,3,Graduate School,Man,3.5,Upper Middle Class,3,Yes,White,Dorm,First Year
+2,4,4,4,3,3,4,2,Job/Career,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,3,3,1,1,4,1,Friends,Woman,3.5,Upper Class,1,Yes,White,Dorm,First Year
+2,4,4,5,3,3,4,2,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,3,3,2,2,2,2,Friends,Man,3.5,Middle Class,1,Yes,White,Dorm,Senior
+2,4,3,3,3,3,2,2,Middlebury,Man,3.5,Middle Class,2,Yes,White,Dorm,First Year
+3,5,4,4,3,4,2,4,Job/Career,Woman,3.5,Middle Class,1,Yes,White,Dorm,Sophomore
+4,5,4,4,1,2,4,4,Middlebury,Man,3.5,Lower Class,0,Yes,White,Dorm,First Year
+3,4,3,3,2,4,3,2,Friends,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,3,4,3,5,5,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,4,3,3,4,4,2,4,Job/Career,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,5,4,5,3,5,3,Friends,Woman,3.5,Upper Middle Class,1,Yes,Hispanic/Latino,Dorm,First Year
+2,4,3,4,3,2,4,3,Job/Career,Man,3.5,Middle Class,1,Yes,Asian/Asian American,Dorm,First Year
+3,4,4,3,3,3,3,3,Friends,Man,3.5,Upper Middle Class,3,Yes,White,House,First Year
+5,5,5,5,5,5,5,5,Middlebury,Man,3.5,Middle Class,1,Yes,Asian/Asian American,Dorm,First Year
+1,1,1,1,4,4,1,4,Friends,Man,3.5,Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,5,5,4,3,4,2,Friends,Woman,3.5,Upper Middle Class,1,No,White,Dorm,First Year
+2,4,5,4,4,4,2,1,Job/Career,Woman,3.5,Middle Class,1,Yes,Hispanic/Latino,Dorm,Sophomore
+3,4,3,3,1,1,4,2,Friends,Man,3.5,Upper Class,2,Yes,Other,Dorm,Sophomore
+2,4,4,4,4,4,3,1,Friends,Man,3.5,Upper Class,2,No,White,Dorm,First Year
+3,3,3,3,3,3,3,4,Friends,Man,3.5,Lower Class,1,Yes,Asian/Asian American,Dorm,First Year
+3,4,4,4,4,3,4,3,Friends,Woman,3.5,Upper Class,1,Yes,White,Dorm,Sophomore
+3,4,4,4,4,3,3,2,Other,Woman,3.5,Upper Middle Class,1,No,White,Dorm,Sophomore
+3,4,4,4,3,4,3,2,Friends,Woman,3.5,Lower Class,2,No,White,Dorm,First Year
+5,3,5,5,5,2,4,1,Friends,Man,3.5,Upper Middle Class,1,No,White,Dorm,Senior
+3,3,3,3,3,3,3,3,Graduate School,Woman,3.5,Lower Class,4,Yes,White,Dorm,First Year
+4,5,3,3,1,1,3,1,Job/Career,Woman,3.5,Middle Class,3,Yes,White,Dorm,Senior
+3,3,4,4,3,4,3,2,Friends,Man,3.5,Upper Middle Class,1,No,White,Dorm,First Year
+3,3,3,3,2,2,3,2,Job/Career,Woman,3.5,Middle Class,1,Yes,White,Dorm,First Year
+4,5,1,1,1,1,5,3,Graduate School,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,3,3,2,2,1,3,3,Friends,Woman,3.5,Lower Class,2,Yes,Asian/Asian American,Dorm,First Year
+1,4,5,5,4,1,3,1,Friends,Woman,3.5,Middle Class,1,Yes,White,Dorm,Junior
+3,3,3,3,3,3,3,2,Friends,Man,3.5,Middle Class,1,Yes,White,Dorm,Senior
+3,4,5,4,2,2,2,1,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,3,2,1,2,2,1,Job/Career,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,3,4,4,4,2,1,Job/Career,Man,3.5,Lower Class,1,Yes,White,Dorm,Junior
+4,4,5,3,4,3,4,4,Family,Woman,3.5,Upper Class,1,Yes,White,Dorm,First Year
+4,5,3,5,1,2,2,4,Friends,Woman,3.5,Lower Class,0,Yes,White,Dorm,Sophomore
+1,4,4,4,4,3,2,2,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,3,3,2,3,3,2,Friends,Woman,3.5,Middle Class,0,No,Other,Dorm,Senior
+3,4,3,3,1,1,4,3,Other,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,3,4,3,4,4,2,2,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,4,5,5,4,5,3,1,Job/Career,Man,3.5,Middle Class,3,Yes,African/African American,Dorm,First Year
+5,5,4,4,2,2,5,3,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,5,2,4,5,4,1,3,Friends,Man,3.5,Lower Class,0,No,White,House,Senior
+5,5,5,5,1,1,5,3,Middlebury,Woman,3.5,Lower Class,1,Yes,White,Dorm,Senior
+5,5,4,5,3,3,5,1,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,2,3,1,1,1,2,1,Friends,Man,3.5,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+4,4,4,4,2,2,4,2,Friends,Woman,3.5,Upper Class,2,Yes,White,House,Senior
+3,4,3,3,1,1,4,5,Friends,Woman,3.5,Lower Class,0,Yes,Hispanic/Latino,Dorm,First Year
+4,4,4,3,3,3,3,3,Job/Career,Woman,3.5,Middle Class,2,Yes,Other,Dorm,First Year
+2,4,4,3,3,3,4,2,None,Woman,3.5,Middle Class,1,No,White,Dorm,First Year
+5,5,5,2,5,2,3,2,Friends,Man,3.5,Upper Class,2,Yes,White,Dorm,Senior
+2,4,4,3,4,2,4,2,Job/Career,Man,3.5,Upper Middle Class,3,Yes,White,Dorm,First Year
+4,4,2,3,1,1,4,2,Friends,Woman,3.5,Middle Class,2,No,White,House,Junior
+3,4,5,4,5,4,3,2,Job/Career,Man,3.5,Middle Class,1,No,White,Dorm,Sophomore
+2,4,3,4,2,2,3,1,Friends,Woman,3.5,Lower Class,3,Yes,White,Dorm,Senior
+1,4,2,2,2,2,2,4,Friends,Woman,3.5,Upper Middle Class,1,No,White,Off Campus,Senior
+2,5,3,5,3,3,2,2,Friends,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,4,4,4,2,3,4,2,Job/Career,Woman,3.5,Upper Middle Class,2,Yes,White,Off Campus,Senior
+1,4,2,3,3,3,1,1,Job/Career,Woman,3.5,Upper Middle Class,1,No,White,Dorm,Sophomore
+1,3,4,4,4,2,2,2,Job/Career,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,4,3,3,2,2,Job/Career,Woman,3.5,Middle Class,1,Yes,Asian/Asian American,House,Senior
+4,4,4,4,3,3,4,1,Graduate School,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,3,3,1,4,3,1,Job/Career,Man,3.5,Middle Class,2,Yes,Other,Dorm,First Year
+3,4,3,3,2,4,3,2,Graduate School,Man,3.5,Middle Class,1,Yes,White,Dorm,Junior
+1,1,4,4,3,3,4,2,Graduate School,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,4,3,3,3,2,Friends,Woman,3.5,Middle Class,2,Yes,White,Dorm,Junior
+2,2,3,3,4,4,5,2,Friends,Man,3.5,Upper Class,1,No,White,House,Senior
+3,3,4,1,2,1,4,3,Middlebury,Woman,3.5,Lower Class,2,No,White,Dorm,First Year
+3,4,4,4,2,3,3,2,Friends,Man,3.5,Upper Middle Class,2,No,White,Dorm,First Year
+1,1,2,1,1,1,2,2,Job/Career,Man,3.5,Upper Middle Class,4,Yes,Asian/Asian American,Dorm,Senior
+4,4,3,3,3,2,4,2,Family,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,3,3,4,2,3,Job/Career,Man,3.5,Middle Class,0,Yes,Other,Dorm,Senior
+2,4,2,3,3,3,2,1,Friends,Other,3.5,Lower Class,1,Yes,Other,House,Senior
+1,3,5,5,5,5,5,5,Job/Career,Woman,3.5,Upper Class,3,Yes,Other,Dorm,Junior
+1,5,2,4,3,2,3,4,Friends,Woman,3.5,Lower Class,1,Yes,White,House,Senior
+4,4,4,4,2,2,4,1,Friends,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,4,3,4,2,4,3,Job/Career,Man,3.5,Upper Class,0,Yes,White,Dorm,Senior
+3,4,4,3,2,2,2,2,Graduate School,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,Senior
+2,3,4,5,4,4,2,1,Friends,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,4,4,4,4,3,3,2,Friends,Woman,3.5,Upper Class,2,Yes,White,Dorm,Senior
+2,4,3,3,3,3,3,2,Friends,Woman,3.5,Upper Middle Class,0,Yes,White,Dorm,Senior
+3,4,3,3,2,1,4,1,Friends,Woman,3.5,Upper Middle Class,1,No,White,Dorm,Senior
+4,5,5,5,3,3,4,1,Job/Career,Woman,3.5,Middle Class,1,Yes,White,House,Sophomore
+2,5,3,4,1,2,1,3,Friends,Woman,3.5,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+2,4,3,4,5,5,1,1,Job/Career,Man,3.5,Upper Middle Class,2,Yes,Other,Dorm,Sophomore
+3,5,3,3,3,3,5,1,None,Woman,3.5,Upper Class,1,Yes,White,Dorm,First Year
+3,4,3,3,4,5,4,2,Job/Career,Man,3.5,Upper Middle Class,2,Yes,Asian/Asian American,Dorm,First Year
+4,4,4,4,4,4,4,3,Job/Career,Man,3.5,Upper Class,2,No,Other,Dorm,First Year
+4,5,3,5,4,4,5,2,Family,Woman,3.5,Middle Class,2,Yes,White,Dorm,First Year
+4,5,3,4,4,3,2,3,Friends,Man,3.5,Middle Class,0,Yes,White,Dorm,First Year
+4,3,4,2,1,1,3,4,Graduate School,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,3,2,1,2,1,Friends,Woman,3.5,Lower Class,1,Yes,White,Dorm,Sophomore
+2,3,4,4,3,4,1,3,Friends,Woman,3.5,Upper Middle Class,0,Yes,White,Off Campus,Senior
+4,4,4,4,3,3,4,2,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,4,4,3,3,4,1,Friends,Woman,3.5,Upper Class,2,Yes,White,Dorm,First Year
+4,4,4,4,4,4,4,2,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,5,5,4,3,3,3,2,Friends,Woman,3.5,Upper Middle Class,1,No,White,House,Senior
+4,4,4,4,1,4,4,4,Middlebury,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,3,3,3,2,1,2,2,Graduate School,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+1,4,3,3,3,3,2,1,Friends,Man,3.5,Upper Middle Class,4,Yes,White,Off Campus,Junior
+5,5,5,3,2,1,5,1,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,House,Junior
+2,3,2,2,3,2,1,3,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,5,5,3,2,5,1,Friends,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,4,4,4,2,2,4,1,Friends,Man,3.5,Middle Class,1,Yes,Other,Off Campus,Junior
+2,4,4,4,2,2,3,2,Graduate School,Woman,3.5,Upper Middle Class,2,Yes,White,Off Campus,Junior
+1,1,1,1,5,5,1,1,None,Other,3.5,Middle Class,1,Yes,White,Dorm,Junior
+3,4,4,4,3,3,1,1,None,Man,3.5,Upper Middle Class,2,Yes,White,Off Campus,Senior
+2,2,3,3,3,3,3,2,Friends,Woman,3.5,Middle Class,3,Yes,White,House,Junior
+2,3,4,2,5,3,1,2,Friends,Woman,3.5,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,Junior
+3,5,2,4,1,1,3,1,Friends,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,Senior
+1,4,3,4,5,3,1,1,None,Man,3.5,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,4,4,2,3,3,2,Friends,Woman,3.5,Upper Class,2,Yes,White,Dorm,First Year
+3,5,4,4,2,2,4,1,Other,Woman,3.5,Upper Middle Class,2,Yes,White,Dorm,First Year
+1,4,4,4,5,2,1,1,Friends,Woman,3.5,Upper Middle Class,2,Yes,White,House,Senior
+3,4,4,3,3,1,4,3,Friends,Woman,3.5,Lower Class,2,Yes,Hispanic/Latino,Dorm,Senior
+2,3,2,4,3,3,1,2,Friends,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,3,2,1,3,3,2,Friends,Man,3.5,Middle Class,2,No,White,Off Campus,Junior
+1,4,3,2,3,3,1,1,Job/Career,Woman,3.5,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,4,4,3,5,3,2,Job/Career,Man,3.5,Upper Middle Class,5,Yes,White,Dorm,Sophomore
+3,4,5,5,5,5,2,1,None,Man,3.5,Upper Class,2,No,White,House,Sophomore
+4,4,3,3,3,2,4,2,Friends,Man,3.5,Middle Class,3,Yes,White,Dorm,Sophomore
+5,4,5,4,1,1,5,2,Middlebury,Man,3.5,Middle Class,1,Yes,White,Off Campus,Junior
+4,4,3,4,1,4,3,2,Friends,Woman,3.5,Middle Class,3,Yes,White,Dorm,First Year
+4,5,4,4,5,2,4,3,Job/Career,Man,3.5,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,4,2,2,2,2,1,Friends,Woman,3.5,Upper Class,4,Yes,White,Dorm,First Year
+3,4,4,4,3,2,3,2,Friends,Woman,3.51,Middle Class,2,Yes,Other,Dorm,Sophomore
+2,3,2,2,2,3,2,1,Friends,Man,3.51,Lower Class,4,No,White,House,Senior
+3,5,4,4,2,4,4,1,Friends,Woman,3.51,Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,3,2,3,4,2,Friends,Woman,3.53,Middle Class,2,Yes,White,House,Senior
+3,5,3,4,2,4,3,2,Friends,Woman,3.53,Lower Class,2,No,Hispanic/Latino,Dorm,Senior
+2,3,2,1,1,1,3,4,Other,Man,3.53,Upper Class,1,Yes,White,Dorm,Junior
+4,4,5,3,1,1,4,2,Job/Career,Woman,3.54,Upper Class,1,Yes,White,Dorm,Senior
+4,4,2,3,1,1,2,4,Friends,Woman,3.54,Upper Middle Class,3,Yes,White,Dorm,Senior
+2,2,4,3,4,5,1,3,Friends,Man,3.54,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,4,4,2,2,4,3,Family,Woman,3.54,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,4,4,3,3,3,2,2,Job/Career,Woman,3.55,Upper Middle Class,2,Yes,White,House,Sophomore
+3,3,3,4,2,2,2,4,Friends,Man,3.55,Lower Class,2,Yes,Asian/Asian American,Dorm,Sophomore
+1,5,4,4,4,4,3,2,None,Woman,3.55,Upper Class,1,Yes,White,Dorm,Junior
+3,3,1,1,1,1,3,2,None,Woman,3.55,Lower Class,1,No,White,Dorm,Junior
+2,3,5,3,2,1,3,2,Friends,Woman,3.55,Middle Class,2,Yes,White,Dorm,Junior
+2,4,3,2,1,1,1,1,Job/Career,Man,3.55,Upper Middle Class,0,Yes,White,House,Junior
+5,5,5,3,1,1,4,4,Friends,Man,3.55,Lower Class,2,Yes,Asian/Asian American,House,Senior
+2,3,5,5,3,3,2,3,Friends,Woman,3.55,Upper Class,2,Yes,White,Dorm,Senior
+2,5,1,3,2,3,2,3,Friends,Woman,3.55,Middle Class,2,Yes,White,Dorm,Senior
+4,4,4,4,4,4,4,3,Friends,Man,3.55,Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,2,1,4,1,2,3,Friends,Woman,3.55,Upper Class,2,Yes,White,Dorm,Junior
+4,3,4,4,4,4,3,1,Friends,Woman,3.55,Upper Middle Class,1,Yes,White,House,Junior
+5,5,5,5,5,2,4,4,Job/Career,Woman,3.56,Upper Middle Class,1,Yes,White,Off Campus,Junior
+2,5,5,3,3,1,2,3,Friends,Woman,3.56,Upper Middle Class,2,Yes,White,House,Junior
+2,3,4,4,4,3,2,2,Job/Career,Man,3.56,Upper Middle Class,2,Yes,White,Dorm,Junior
+4,4,3,3,3,3,4,1,Graduate School,Man,3.57,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+3,3,2,2,1,3,4,2,Job/Career,Woman,3.58,Upper Middle Class,0,Yes,Asian/Asian American,Off Campus,Senior
+2,3,4,3,2,3,3,2,Job/Career,Woman,3.58,Upper Middle Class,3,Yes,White,Dorm,Junior
+4,4,3,3,2,4,2,2,Friends,Woman,3.6,Upper Middle Class,2,No,White,Dorm,Senior
+4,4,4,2,1,1,4,3,Middlebury,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,First Year
+5,5,4,5,5,5,3,2,Friends,Man,3.6,Upper Middle Class,1,No,White,Off Campus,Senior
+4,5,3,3,1,2,5,4,Graduate School,Woman,3.6,Upper Middle Class,0,Yes,White,Dorm,First Year
+2,4,3,3,4,1,5,5,Job/Career,Woman,3.6,Lower Class,1,No,White,Dorm,Sophomore
+1,5,1,2,3,2,4,3,Friends,Other,3.6,Lower Class,1,No,Other,Off Campus,Senior
+3,5,1,4,2,4,3,2,Friends,Woman,3.6,Middle Class,2,No,White,Dorm,Senior
+4,5,3,4,2,4,4,2,Job/Career,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,4,4,2,2,4,2,Friends,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,5,4,4,2,3,4,2,Friends,Woman,3.6,Upper Middle Class,2,No,White,Dorm,Sophomore
+4,4,3,3,2,2,4,4,Friends,Woman,3.6,Lower Class,2,No,White,Dorm,Senior
+2,3,4,4,4,4,3,1,Job/Career,Woman,3.6,Middle Class,1,Yes,White,House,Sophomore
+2,4,3,3,2,2,2,2,Friends,Woman,3.6,Upper Class,2,Yes,White,House,Senior
+3,5,4,5,3,3,5,2,Friends,Man,3.6,Upper Middle Class,1,Yes,White,House,Junior
+2,4,3,3,3,3,2,1,Graduate School,Man,3.6,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+5,5,4,4,4,3,3,4,Job/Career,Woman,3.6,Upper Middle Class,0,No,White,Dorm,Junior
+4,4,2,3,3,3,3,2,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,House,Senior
+4,4,4,4,3,3,4,2,Friends,Woman,3.6,Upper Middle Class,2,Yes,White,Off Campus,Senior
+4,5,4,4,2,2,3,1,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,4,5,1,3,1,4,2,Friends,Woman,3.6,Lower Class,1,Yes,Hispanic/Latino,Dorm,First Year
+1,5,4,3,4,4,2,4,Friends,Woman,3.6,Middle Class,1,No,Other,Off Campus,Senior
+5,5,4,3,1,1,3,1,Other,Man,3.6,Upper Middle Class,3,No,White,Dorm,First Year
+3,3,3,3,2,2,3,2,Friends,Man,3.6,Lower Class,0,No,Asian/Asian American,Dorm,Sophomore
+2,3,3,3,1,1,2,5,Friends,Man,3.6,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,5,3,5,5,5,2,1,Friends,Man,3.6,Upper Middle Class,2,Yes,White,House,Senior
+4,5,5,5,3,4,3,3,Friends,Man,3.6,Upper Middle Class,2,No,White,Dorm,Junior
+3,4,3,3,4,2,3,3,Friends,Woman,3.6,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,5,3,3,2,4,4,1,None,Woman,3.6,Upper Middle Class,2,No,White,Dorm,First Year
+2,5,3,5,4,3,2,2,Friends,Woman,3.6,Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+2,5,3,3,3,4,1,1,Friends,Woman,3.6,Lower Class,3,No,White,Dorm,Sophomore
+1,4,5,5,5,2,2,2,Job/Career,Man,3.6,Upper Middle Class,0,Yes,White,Dorm,Senior
+3,5,3,3,1,1,3,5,Other,Woman,3.6,Lower Class,3,No,White,Dorm,First Year
+3,2,4,3,3,1,5,3,Job/Career,Woman,3.6,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+1,3,4,3,4,3,3,1,Graduate School,Woman,3.6,Upper Middle Class,0,Yes,White,House,Senior
+2,4,2,2,4,4,1,2,Friends,Woman,3.6,Upper Middle Class,1,No,White,Dorm,Senior
+3,3,2,2,1,1,4,2,Other,Man,3.6,Upper Class,1,Yes,White,Dorm,First Year
+4,4,4,3,1,1,4,5,None,Woman,3.6,Upper Middle Class,1,Yes,Other,Dorm,Sophomore
+2,4,3,3,5,3,1,3,Friends,Woman,3.6,Lower Class,2,No,White,Off Campus,Junior
+4,4,1,1,1,1,5,1,Other,Man,3.6,Upper Middle Class,2,Yes,Other,House,Senior
+5,5,5,5,1,1,4,2,Graduate School,Woman,3.6,Upper Middle Class,2,No,White,Off Campus,Junior
+4,4,4,3,3,4,4,2,Other,Man,3.6,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+5,5,5,5,3,3,4,4,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Senior
+2,3,3,3,1,1,3,2,Other,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,2,3,1,1,4,2,None,Man,3.6,Upper Middle Class,1,Yes,White,House,Junior
+4,5,4,4,4,4,4,4,Friends,Man,3.6,Upper Middle Class,1,Yes,White,House,Junior
+3,4,4,4,3,3,2,2,Friends,Woman,3.6,Lower Class,5,Yes,Asian/Asian American,Dorm,Senior
+3,4,4,3,2,2,2,2,Friends,Woman,3.6,Middle Class,1,No,White,Dorm,Sophomore
+1,4,4,3,2,2,1,3,Job/Career,Woman,3.6,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+3,4,4,4,5,2,5,4,Friends,Woman,3.6,Middle Class,2,Yes,White,Dorm,Senior
+3,4,3,2,4,1,4,3,Job/Career,Woman,3.6,Upper Middle Class,2,Yes,White,Dorm,Junior
+3,5,5,5,1,1,4,3,Friends,Man,3.6,Middle Class,1,No,Other,House,Junior
+3,4,4,3,4,3,4,1,Friends,Man,3.6,Upper Middle Class,1,Yes,Other,Dorm,Sophomore
+3,3,5,4,5,2,5,3,Friends,Woman,3.6,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+4,4,4,1,1,1,2,3,Middlebury,Woman,3.6,Upper Class,1,Yes,White,Dorm,Sophomore
+3,5,4,3,5,1,2,1,Friends,Woman,3.6,Upper Class,1,No,White,House,Junior
+2,4,3,3,4,2,4,2,Friends,Woman,3.6,Lower Class,1,No,White,Dorm,Senior
+4,4,4,4,1,5,4,1,Job/Career,Man,3.6,Upper Middle Class,4,Yes,White,Off Campus,Senior
+4,4,3,3,2,2,4,4,Friends,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,4,4,4,2,2,3,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,3,1,1,1,1,3,1,Friends,Man,3.6,Middle Class,3,No,Other,Dorm,First Year
+2,4,2,5,4,4,2,3,Friends,Woman,3.6,Upper Middle Class,2,Yes,White,Off Campus,Junior
+2,4,5,3,4,2,3,2,Job/Career,Woman,3.6,Middle Class,2,Yes,White,Dorm,Junior
+4,4,4,4,3,3,3,2,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,3,4,4,4,2,2,5,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,House,Junior
+4,4,4,4,5,3,4,1,Friends,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,5,2,4,4,5,2,1,Job/Career,Man,3.6,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,5,4,3,5,1,2,3,Job/Career,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,3,4,3,4,2,4,3,Job/Career,Woman,3.6,Upper Middle Class,1,Yes,White,House,Senior
+4,4,4,3,3,3,2,1,Friends,Man,3.6,Middle Class,2,Yes,White,Dorm,Sophomore
+5,5,5,5,1,3,5,1,Friends,Woman,3.6,Upper Middle Class,4,Yes,White,Dorm,First Year
+3,4,5,4,1,1,3,1,Friends,Man,3.6,Upper Class,2,Yes,White,Dorm,Senior
+4,4,4,2,3,4,4,3,Friends,Man,3.6,Lower Class,1,Yes,White,Off Campus,Junior
+3,4,5,5,2,4,2,3,Job/Career,Man,3.6,Upper Class,1,Yes,Other,House,Sophomore
+5,5,4,4,3,4,4,3,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,4,4,4,4,2,2,Middlebury,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,3,2,3,1,1,3,1,Friends,Man,3.6,Middle Class,1,Yes,White,House,Sophomore
+1,3,5,2,5,3,1,1,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,3,3,4,1,3,4,Friends,Man,3.6,Upper Class,2,Yes,Asian/Asian American,Dorm,Senior
+4,4,2,2,4,4,3,1,None,Man,3.6,Upper Middle Class,1,Yes,Other,House,Senior
+5,5,5,5,5,5,5,1,Friends,Man,3.6,Upper Middle Class,3,Yes,White,House,Junior
+3,4,4,3,3,3,4,1,Job/Career,Woman,3.6,Upper Middle Class,1,No,White,Dorm,Sophomore
+4,5,5,5,3,3,4,2,Friends,Woman,3.6,Upper Middle Class,2,Yes,White,Off Campus,Junior
+3,5,5,4,5,3,4,1,Friends,Woman,3.6,Middle Class,1,Yes,White,Dorm,First Year
+4,5,4,4,4,2,3,4,Friends,Woman,3.6,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,4,4,4,3,3,2,2,Friends,Woman,3.6,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+1,1,1,1,1,1,1,1,None,Other,3.6,Lower Class,1,Yes,White,Dorm,Junior
+2,3,3,3,4,3,1,1,Middlebury,Man,3.6,Upper Middle Class,2,Yes,White,House,Sophomore
+2,4,4,3,4,3,2,4,Job/Career,Woman,3.6,Upper Middle Class,2,Yes,White,Dorm,First Year
+1,3,3,3,2,4,3,2,Friends,Woman,3.6,Middle Class,4,No,White,House,Sophomore
+3,4,5,4,5,1,2,1,Friends,Woman,3.6,Upper Class,2,Yes,White,Dorm,Sophomore
+4,4,3,3,4,1,3,5,Friends,Woman,3.6,Middle Class,2,Yes,Other,Dorm,First Year
+3,4,4,4,4,4,3,3,Friends,Woman,3.6,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+2,4,5,4,4,2,1,3,Friends,Woman,3.6,Lower Class,1,No,Other,Dorm,First Year
+4,4,4,4,3,3,4,3,Other,Woman,3.6,Upper Middle Class,2,Yes,White,Dorm,Junior
+2,4,4,3,3,3,2,1,Friends,Woman,3.6,Middle Class,1,Yes,White,Dorm,Sophomore
+5,5,5,5,1,1,4,1,Job/Career,Man,3.6,Middle Class,0,Yes,White,Dorm,Junior
+4,5,4,3,2,2,3,2,Friends,Woman,3.6,Upper Middle Class,3,Yes,White,Dorm,Senior
+1,5,1,1,1,1,3,3,Friends,Woman,3.61,Upper Middle Class,1,Yes,Other,Dorm,Senior
+4,4,4,4,4,4,3,2,Job/Career,Man,3.62,Upper Middle Class,4,Yes,White,Dorm,Senior
+4,5,3,2,1,1,4,3,Middlebury,Woman,3.62,Middle Class,2,Yes,White,Dorm,Senior
+3,4,5,5,4,4,5,2,Friends,Woman,3.62,Upper Middle Class,1,Yes,White,House,Junior
+3,4,3,4,3,4,4,2,Friends,Woman,3.63,Upper Middle Class,1,Yes,White,Off Campus,Senior
+4,4,5,5,3,4,4,1,Friends,Man,3.63,Upper Middle Class,3,No,White,Dorm,Sophomore
+2,3,3,3,4,2,2,5,Job/Career,Woman,3.63,Middle Class,0,Yes,Asian/Asian American,Dorm,Senior
+3,4,5,5,3,1,5,3,Friends,Woman,3.63,Upper Middle Class,3,No,White,Dorm,Sophomore
+5,5,5,5,1,1,5,1,Middlebury,Man,3.63,Upper Class,2,No,Other,Off Campus,Junior
+4,4,4,4,1,1,3,3,Friends,Woman,3.64,Upper Middle Class,0,Yes,White,House,Senior
+4,4,5,5,2,2,4,1,Friends,Woman,3.64,Middle Class,1,Yes,White,Off Campus,Senior
+3,3,2,1,2,1,4,3,Friends,Man,3.64,Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,4,4,4,1,1,4,5,Friends,Woman,3.64,Lower Class,0,No,White,Dorm,Senior
+3,4,4,2,4,4,2,2,Friends,Man,3.65,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+2,4,4,4,3,1,3,1,Job/Career,Man,3.65,Lower Class,2,No,Other,Dorm,Senior
+3,4,2,4,4,4,2,2,Job/Career,Woman,3.65,Middle Class,1,Yes,White,Dorm,Senior
+3,4,5,4,1,1,3,1,Other,Man,3.65,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,4,4,4,3,3,2,2,Friends,Man,3.65,Middle Class,1,No,White,Dorm,Senior
+3,4,5,3,1,1,4,3,Graduate School,Man,3.65,Upper Middle Class,0,Yes,White,House,Senior
+2,4,4,4,2,3,3,1,Friends,Man,3.65,Upper Class,1,No,Other,Dorm,Sophomore
+4,5,5,5,4,3,2,2,Friends,Man,3.65,Middle Class,1,Yes,White,Dorm,Junior
+2,4,4,4,2,3,5,1,Friends,Man,3.65,Lower Class,2,No,White,Off Campus,Senior
+4,4,5,4,4,5,5,1,Friends,Man,3.65,Upper Class,2,No,White,Dorm,Sophomore
+2,4,3,5,2,4,3,1,Job/Career,Woman,3.65,Middle Class,1,No,White,House,Senior
+3,5,3,2,3,1,2,1,Friends,Woman,3.65,Middle Class,1,No,Other,Dorm,Senior
+3,3,4,3,2,2,2,2,Friends,Woman,3.65,Upper Middle Class,2,Yes,White,House,Senior
+4,5,3,3,1,1,4,1,Friends,Woman,3.65,Upper Middle Class,2,Yes,White,House,Junior
+2,5,4,4,4,4,3,2,Job/Career,Woman,3.65,Upper Class,1,Yes,White,Dorm,First Year
+5,5,5,5,1,1,5,3,Friends,Woman,3.65,Upper Class,5,No,White,Dorm,Senior
+5,5,5,4,4,1,5,3,Middlebury,Woman,3.66,Lower Class,1,Yes,White,Dorm,First Year
+3,3,3,3,1,1,2,3,Graduate School,Woman,3.66,Upper Middle Class,2,Yes,Other,Dorm,Sophomore
+3,3,5,5,1,1,5,1,Other,Other,3.66,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,2,3,2,1,4,5,Friends,Man,3.66,Upper Middle Class,3,Yes,Other,Dorm,First Year
+4,4,4,4,1,1,5,4,Friends,Woman,3.66,Upper Middle Class,1,Yes,White,Dorm,Senior
+1,2,1,1,1,1,1,1,Other,Woman,3.66,Lower Class,2,No,African/African American,House,Sophomore
+3,3,2,3,1,1,3,4,Job/Career,Woman,3.66,Upper Middle Class,2,Yes,Other,Off Campus,Junior
+3,5,4,4,4,4,2,2,Friends,Woman,3.66,Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,4,4,3,3,4,5,Friends,Woman,3.66,Middle Class,1,Yes,White,Dorm,Senior
+3,4,3,4,3,3,2,3,Friends,Man,3.67,Upper Class,1,Yes,White,Dorm,First Year
+4,4,5,5,2,2,4,3,Friends,Woman,3.67,Upper Class,2,Yes,White,House,Sophomore
+2,4,2,2,4,3,3,1,Job/Career,Woman,3.67,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,3,3,2,4,2,1,Friends,Woman,3.67,Lower Class,1,No,White,Dorm,Sophomore
+4,4,4,4,2,3,4,1,Friends,Woman,3.68,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,5,2,3,4,5,3,4,Friends,Man,3.68,Upper Middle Class,1,Yes,White,Dorm,Senior
+2,4,3,3,1,1,2,1,None,Woman,3.68,Upper Class,1,Yes,White,House,Junior
+4,4,5,3,2,1,4,3,Job/Career,Woman,3.69,Middle Class,1,Yes,White,Dorm,Junior
+4,3,4,3,3,1,4,2,Job/Career,Man,3.7,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,1,1,1,1,3,3,Other,Woman,3.7,Upper Middle Class,1,Yes,Other,Dorm,First Year
+1,5,4,3,1,1,3,4,Graduate School,Woman,3.7,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,3,5,4,4,5,5,2,Middlebury,Man,3.7,Upper Middle Class,1,Yes,White,House,Senior
+5,4,5,4,1,1,5,3,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,5,3,4,3,2,3,4,Friends,Woman,3.7,Middle Class,1,Yes,Asian/Asian American,Dorm,First Year
+4,4,5,5,3,1,4,3,Graduate School,Woman,3.7,Lower Class,2,Yes,White,Dorm,Sophomore
+1,4,4,3,5,1,1,4,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,House,Senior
+4,5,5,5,5,5,3,1,Friends,Man,3.7,Upper Middle Class,1,Yes,White,Off Campus,Senior
+4,5,4,3,1,1,3,2,Friends,Man,3.7,Lower Class,2,Yes,Asian/Asian American,Dorm,First Year
+5,5,5,5,5,5,5,2,Friends,Woman,3.7,Upper Class,1,No,White,House,Junior
+3,3,3,5,4,5,4,1,Friends,Man,3.7,Upper Class,0,Yes,Other,Dorm,First Year
+4,5,5,4,3,4,4,3,Graduate School,Man,3.7,Upper Class,5,No,White,Dorm,First Year
+2,3,2,3,3,3,1,2,Job/Career,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,Senior
+5,5,4,4,3,3,4,4,Friends,Woman,3.7,Middle Class,2,Yes,White,Off Campus,Junior
+3,4,4,3,1,1,3,1,Friends,Woman,3.7,Lower Class,0,No,Other,Dorm,Senior
+2,3,3,4,2,3,4,1,Job/Career,Man,3.7,Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+2,3,2,3,3,3,4,2,Friends,Woman,3.7,Upper Middle Class,3,Yes,White,Dorm,Senior
+2,4,4,4,3,2,4,1,Friends,Woman,3.7,Upper Middle Class,1,No,Asian/Asian American,Dorm,Sophomore
+1,4,1,3,2,1,3,1,Friends,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,3,4,2,4,2,Job/Career,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,4,4,3,4,1,2,2,Friends,Man,3.7,Lower Class,4,Yes,Asian/Asian American,Dorm,Senior
+4,5,3,3,1,1,5,1,Job/Career,Woman,3.7,Middle Class,2,Yes,White,Dorm,Junior
+2,4,2,2,4,4,2,1,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Off Campus,Junior
+4,5,4,4,3,3,4,2,Friends,Woman,3.7,Middle Class,1,No,White,Dorm,First Year
+3,3,3,1,2,2,4,3,Job/Career,Woman,3.7,Middle Class,1,Yes,White,Dorm,First Year
+3,3,3,3,4,1,2,5,Other,Man,3.7,Upper Class,3,Yes,Other,Off Campus,Junior
+4,4,3,3,4,3,5,3,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,2,2,2,4,3,1,Job/Career,Man,3.7,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+4,4,3,2,3,3,3,2,Job/Career,Woman,3.7,Middle Class,1,Yes,Other,Dorm,First Year
+2,4,1,2,1,1,3,3,Job/Career,Woman,3.7,Upper Class,2,Yes,White,Dorm,Senior
+3,3,3,3,3,3,3,3,Job/Career,Man,3.7,Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,4,4,3,2,3,1,Job/Career,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,4,3,4,2,4,4,1,Job/Career,Man,3.7,Upper Middle Class,0,Yes,White,Dorm,First Year
+4,4,4,3,3,1,4,1,Job/Career,Woman,3.7,Upper Class,1,Yes,White,Dorm,Sophomore
+2,4,2,2,3,1,4,4,Friends,Woman,3.7,Lower Class,3,Yes,White,Dorm,Sophomore
+2,4,2,3,4,1,2,2,Friends,Woman,3.7,Upper Class,0,Yes,White,Dorm,Junior
+2,4,4,3,2,1,4,2,Graduate School,Woman,3.7,Lower Class,1,Yes,White,House,Junior
+5,5,5,5,1,1,5,4,Job/Career,Woman,3.7,Upper Middle Class,2,Yes,White,Dorm,Junior
+4,5,5,3,4,2,4,2,Job/Career,Woman,3.7,Middle Class,3,No,White,Dorm,Sophomore
+4,5,3,1,1,1,3,4,Other,Woman,3.7,Middle Class,3,Yes,White,Dorm,First Year
+3,3,2,2,3,3,2,1,Other,Woman,3.7,Middle Class,2,Yes,Other,Dorm,Sophomore
+1,3,4,3,4,4,1,2,Friends,Woman,3.7,Upper Middle Class,3,Yes,White,House,Senior
+2,4,2,4,2,2,4,2,Friends,Man,3.7,Lower Class,1,No,Other,Dorm,Junior
+2,5,5,4,4,1,1,2,Graduate School,Woman,3.7,Upper Middle Class,1,No,White,Dorm,Sophomore
+4,5,5,4,1,1,4,1,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+1,3,4,4,5,3,2,1,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,4,4,2,2,1,2,4,Job/Career,Woman,3.7,Middle Class,1,Yes,White,Dorm,Senior
+4,5,4,4,4,4,5,2,Friends,Woman,3.7,Upper Middle Class,4,No,White,Dorm,Sophomore
+3,3,1,1,1,1,5,3,Friends,Woman,3.7,Upper Middle Class,0,Yes,White,Dorm,Sophomore
+4,5,5,3,5,1,3,3,Graduate School,Woman,3.7,Upper Middle Class,0,Yes,White,Dorm,First Year
+5,5,4,5,4,3,3,3,Other,Man,3.7,Upper Middle Class,2,Yes,White,House,Junior
+3,5,5,5,3,3,4,1,Friends,Woman,3.7,Upper Middle Class,0,Yes,White,House,Sophomore
+1,1,3,3,3,5,1,2,Job/Career,Woman,3.7,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,4,4,4,2,2,2,2,Job/Career,Woman,3.7,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,Junior
+3,4,3,3,1,2,4,1,None,Woman,3.7,Upper Middle Class,0,No,Asian/Asian American,Dorm,Sophomore
+5,5,5,5,3,1,5,3,Friends,Woman,3.7,Middle Class,1,No,White,Dorm,Sophomore
+2,5,4,5,3,3,3,3,Friends,Woman,3.7,Lower Class,0,No,Other,Dorm,Sophomore
+5,5,5,5,5,5,4,5,Friends,Man,3.7,Upper Class,2,Yes,White,Dorm,Sophomore
+4,4,5,2,1,1,4,3,Friends,Man,3.7,Middle Class,1,Yes,Other,Off Campus,Junior
+3,4,4,4,3,4,4,2,Friends,Man,3.7,Upper Middle Class,1,Yes,White,House,Junior
+3,3,5,5,1,1,4,2,Middlebury,Man,3.7,Middle Class,1,No,Asian/Asian American,Dorm,Junior
+3,5,4,4,5,4,1,4,Graduate School,Woman,3.7,Lower Class,1,No,White,Off Campus,Junior
+4,4,4,4,4,2,5,2,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,4,3,3,1,1,3,3,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+1,4,2,4,3,1,3,3,Friends,Woman,3.7,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,Senior
+2,5,3,3,2,3,2,1,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,3,4,4,3,3,3,2,Friends,Woman,3.7,Upper Middle Class,5,Yes,White,Dorm,Junior
+2,4,4,4,2,3,3,1,Job/Career,Man,3.7,Middle Class,1,No,White,Dorm,Senior
+4,3,3,3,3,3,3,3,Job/Career,Man,3.7,Upper Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,5,4,3,2,3,3,4,Friends,Man,3.7,Upper Class,1,No,White,Off Campus,Senior
+4,5,3,4,4,4,4,4,Graduate School,Woman,3.7,Middle Class,3,Yes,White,House,Junior
+3,4,3,4,2,2,4,2,Friends,Woman,3.7,Middle Class,0,Yes,White,Dorm,Junior
+5,4,5,3,2,2,3,2,Friends,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,3,5,4,4,2,4,1,Friends,Man,3.7,Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+4,3,5,3,1,1,3,3,Friends,Woman,3.7,Middle Class,1,No,White,Dorm,Sophomore
+3,4,4,4,5,4,3,4,Friends,Woman,3.7,Middle Class,2,Yes,White,Dorm,Junior
+2,5,5,4,4,2,2,2,Job/Career,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,4,5,1,5,2,3,Job/Career,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,Senior
+3,5,3,3,2,4,4,1,Friends,Man,3.7,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,2,4,5,3,3,Friends,Man,3.7,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,5,5,5,4,4,3,2,Friends,Woman,3.7,Upper Class,4,No,White,Dorm,First Year
+4,5,3,3,4,4,3,4,Friends,Woman,3.7,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,4,3,4,2,4,3,1,Friends,Man,3.7,Middle Class,2,Yes,Asian/Asian American,Dorm,First Year
+2,3,5,5,2,2,2,2,Graduate School,Woman,3.7,Middle Class,1,Yes,White,Dorm,Sophomore
+3,3,4,4,3,3,4,1,Friends,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,4,4,4,2,2,3,2,Job/Career,Woman,3.7,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,4,5,5,5,4,1,Job/Career,Man,3.7,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,3,3,3,3,3,3,3,Friends,Man,3.7,Middle Class,0,Yes,Asian/Asian American,Dorm,Sophomore
+5,5,5,5,1,1,5,5,Middlebury,Man,3.7,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Sophomore
+4,5,4,4,4,4,3,5,Friends,Woman,3.7,Upper Middle Class,1,Yes,Hispanic/Latino,Dorm,First Year
+4,5,3,5,4,4,3,3,Friends,Woman,3.7,Upper Class,2,Yes,White,Dorm,First Year
+3,4,3,2,2,1,2,3,Friends,Woman,3.7,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,5,3,4,1,2,5,1,Friends,Woman,3.7,Middle Class,1,No,White,House,Senior
+4,5,4,4,5,4,5,2,Friends,Man,3.71,Upper Middle Class,1,Yes,White,Dorm,Senior
+2,3,5,4,3,3,1,1,Friends,Woman,3.72,Upper Class,2,Yes,Other,Dorm,Senior
+1,4,2,1,2,1,1,1,Graduate School,Woman,3.72,Middle Class,3,No,White,Dorm,Junior
+3,5,3,4,3,5,4,1,Friends,Woman,3.72,Upper Class,2,Yes,White,House,Senior
+2,5,4,4,4,2,2,1,Friends,Woman,3.72,Upper Middle Class,1,Yes,Other,Dorm,Junior
+4,5,4,4,1,1,5,2,Job/Career,Man,3.72,Middle Class,1,No,White,Dorm,Senior
+3,3,5,4,3,1,3,3,Job/Career,Woman,3.74,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,3,3,1,1,4,4,Other,Woman,3.74,Upper Middle Class,0,No,Other,Dorm,Junior
+3,4,1,1,3,1,3,1,Friends,Woman,3.74,Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+2,4,3,3,3,3,3,3,Graduate School,Woman,3.74,Upper Class,2,Yes,White,Dorm,Junior
+5,4,5,3,3,1,4,4,Friends,Woman,3.74,Middle Class,1,No,White,Dorm,Senior
+2,4,2,2,3,1,2,2,Friends,Woman,3.75,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+4,4,2,2,3,3,3,1,Friends,Man,3.75,Upper Class,2,Yes,White,Off Campus,Senior
+3,3,2,2,3,3,2,1,Friends,Woman,3.75,Upper Middle Class,0,Yes,Other,Off Campus,Sophomore
+3,4,3,3,2,2,3,1,Job/Career,Woman,3.75,Middle Class,1,Yes,White,Dorm,First Year
+2,5,3,3,4,4,2,1,Friends,Woman,3.75,Upper Class,2,Yes,White,House,Sophomore
+3,1,4,4,2,3,2,1,Job/Career,Man,3.75,Middle Class,2,Yes,White,Dorm,Senior
+4,5,4,4,2,1,4,5,Job/Career,Woman,3.75,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,3,2,4,4,2,2,4,Friends,Man,3.75,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,4,3,3,2,1,3,3,Friends,Man,3.75,Lower Class,3,Yes,White,Dorm,Junior
+4,4,4,4,2,3,4,3,Friends,Woman,3.75,Upper Middle Class,2,Yes,White,House,Junior
+4,5,4,3,4,4,4,1,Friends,Woman,3.75,Middle Class,1,Yes,White,House,Sophomore
+4,4,5,5,3,4,2,1,Friends,Woman,3.75,Upper Middle Class,2,Yes,Other,Dorm,Senior
+2,5,4,3,3,3,2,3,Friends,Woman,3.75,Upper Middle Class,3,Yes,White,Dorm,Senior
+3,3,3,3,3,3,3,3,Job/Career,Man,3.75,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,4,3,4,4,4,2,2,Friends,Man,3.75,Upper Class,2,Yes,White,Dorm,Junior
+4,4,4,4,5,2,3,2,Job/Career,Man,3.75,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,3,2,2,4,4,3,2,Friends,Woman,3.75,Upper Middle Class,1,No,White,House,Sophomore
+3,4,5,4,5,2,3,2,Friends,Woman,3.75,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,3,4,4,3,3,2,2,Friends,Woman,3.75,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,5,5,4,3,3,5,4,Job/Career,Woman,3.75,Upper Class,2,Yes,White,Dorm,Sophomore
+2,3,4,4,5,3,3,4,Job/Career,Man,3.75,Middle Class,1,Yes,White,Dorm,First Year
+3,5,2,4,2,2,4,3,Friends,Woman,3.75,Middle Class,1,Yes,White,Dorm,Senior
+5,4,5,3,3,3,4,4,Graduate School,Woman,3.75,Lower Class,0,Yes,White,Dorm,First Year
+3,4,4,4,4,3,2,3,Friends,Man,3.75,Upper Class,1,Yes,Other,Dorm,First Year
+1,5,1,1,1,1,1,5,Job/Career,Woman,3.76,Middle Class,1,No,Asian/Asian American,Dorm,Senior
+4,4,3,3,3,3,4,1,Friends,Other,3.76,Middle Class,0,Yes,Asian/Asian American,Dorm,Senior
+4,5,3,3,1,1,4,3,Friends,Woman,3.76,Upper Middle Class,1,Yes,White,House,Sophomore
+4,4,4,4,3,3,4,1,None,Woman,3.77,Upper Class,1,Yes,Other,House,Senior
+4,4,4,4,2,2,2,3,Other,Woman,3.77,Middle Class,3,Yes,Other,Dorm,Junior
+5,5,5,5,5,5,4,3,Graduate School,Woman,3.77,Upper Middle Class,2,Yes,White,Off Campus,Junior
+3,5,5,4,2,4,4,2,Job/Career,Man,3.77,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,5,5,5,2,2,4,3,Friends,Woman,3.78,Upper Class,2,No,White,Off Campus,Junior
+5,5,5,5,1,1,5,4,Friends,Woman,3.78,Upper Middle Class,1,Yes,White,House,Senior
+2,4,2,3,2,2,2,3,Friends,Man,3.79,Lower Class,1,No,White,Dorm,Junior
+4,5,4,4,2,1,4,5,Friends,Woman,3.79,Lower Class,0,No,White,House,Senior
+2,4,4,4,4,3,2,3,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,5,3,3,3,4,2,1,Job/Career,Woman,3.8,Middle Class,1,Yes,White,Dorm,First Year
+4,5,5,5,1,3,4,1,Friends,Man,3.8,Middle Class,2,Yes,White,Dorm,Senior
+2,4,3,2,4,1,2,2,Job/Career,Woman,3.8,Upper Middle Class,1,No,White,House,Junior
+3,4,4,4,4,2,4,4,Job/Career,Woman,3.8,Upper Middle Class,0,Yes,White,Off Campus,Junior
+3,3,3,3,1,1,4,1,Friends,Man,3.8,Middle Class,0,Yes,Other,Dorm,Sophomore
+3,4,2,4,1,1,3,4,Job/Career,Woman,3.8,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,4,5,5,2,4,4,2,Graduate School,Woman,3.8,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,3,3,3,1,1,3,1,Graduate School,Woman,3.8,Middle Class,1,Yes,White,House,Sophomore
+4,4,5,5,4,4,3,2,Friends,Man,3.8,Upper Class,1,Yes,Other,Dorm,Junior
+3,4,2,3,1,1,4,3,Graduate School,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,5,5,5,1,1,4,2,Job/Career,Woman,3.8,Lower Class,2,No,White,Dorm,First Year
+2,4,3,3,4,1,1,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,Other,Dorm,Senior
+2,4,4,3,3,1,2,1,Friends,Woman,3.8,Middle Class,4,Yes,White,Dorm,Sophomore
+5,5,2,3,1,2,4,1,None,Woman,3.8,Upper Class,3,Yes,White,House,Sophomore
+3,5,3,4,1,1,4,4,Friends,Other,3.8,Lower Class,2,Yes,White,House,First Year
+3,4,4,3,4,3,3,2,Friends,Woman,3.8,Middle Class,4,Yes,White,Dorm,First Year
+3,4,4,3,5,2,3,2,Friends,Woman,3.8,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,4,3,4,3,2,3,2,None,Man,3.8,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+4,4,3,3,1,1,4,1,Job/Career,Man,3.8,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+3,3,4,2,2,1,2,3,Friends,Man,3.8,Middle Class,1,No,White,Dorm,First Year
+4,4,4,4,3,3,4,2,Friends,Man,3.8,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+2,2,2,2,2,2,3,4,Family,Woman,3.8,Upper Class,0,Yes,Asian/Asian American,Dorm,First Year
+4,5,4,4,5,5,4,2,Middlebury,Woman,3.8,Middle Class,1,No,White,Dorm,First Year
+3,4,4,4,5,2,1,3,Job/Career,Woman,3.8,Upper Class,1,Yes,White,House,Sophomore
+3,4,3,4,4,4,4,1,Job/Career,Man,3.8,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,3,3,3,3,3,3,3,Friends,Man,3.8,Upper Middle Class,1,Yes,White,Dorm,Senior
+5,5,3,4,2,4,5,2,Friends,Man,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,5,2,2,5,5,2,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Off Campus,Senior
+3,3,1,3,1,1,2,1,Friends,Man,3.8,Upper Middle Class,0,Yes,White,Off Campus,Sophomore
+3,4,5,4,1,1,3,2,Job/Career,Man,3.8,Middle Class,5,No,White,Dorm,Sophomore
+2,5,1,1,1,1,5,5,Middlebury,Woman,3.8,Upper Middle Class,0,Yes,Asian/Asian American,Dorm,First Year
+2,2,3,3,3,1,2,5,Job/Career,Woman,3.8,Upper Middle Class,1,Yes,Other,Dorm,First Year
+2,5,3,3,4,1,4,2,Job/Career,Woman,3.8,Middle Class,1,Yes,White,Dorm,First Year
+4,5,5,4,1,1,4,3,Family,Man,3.8,Middle Class,2,Yes,Other,Dorm,First Year
+3,3,4,3,4,2,3,3,Job/Career,Man,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,3,4,4,5,2,4,2,Friends,Man,3.8,Upper Middle Class,2,Yes,White,Dorm,Junior
+4,4,5,4,1,1,3,2,Job/Career,Woman,3.8,Middle Class,1,Yes,White,Dorm,Senior
+2,4,1,3,4,3,2,1,None,Man,3.8,Upper Middle Class,1,Yes,White,House,Sophomore
+3,4,3,3,4,3,3,2,Graduate School,Woman,3.8,Middle Class,3,Yes,Other,Dorm,First Year
+3,3,3,3,3,3,3,3,Other,Man,3.8,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,2,4,2,4,3,2,1,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,5,3,5,2,4,3,Graduate School,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,4,5,2,1,1,4,5,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,House,Senior
+5,4,3,3,1,1,5,4,Job/Career,Man,3.8,Middle Class,0,Yes,Asian/Asian American,Dorm,Sophomore
+3,5,4,4,5,2,4,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+5,5,5,5,1,1,5,3,Middlebury,Woman,3.8,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+3,4,4,4,2,2,2,2,Friends,Woman,3.8,Upper Middle Class,2,Yes,White,House,Junior
+4,4,5,5,2,2,4,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,House,Senior
+4,4,4,4,5,3,4,3,Friends,Man,3.8,Upper Middle Class,2,Yes,White,House,Sophomore
+3,3,4,3,2,1,4,4,Other,Man,3.8,Upper Middle Class,3,Yes,White,Dorm,Junior
+2,4,4,4,1,1,3,2,Friends,Woman,3.8,Lower Class,1,Yes,White,House,Senior
+4,3,4,4,4,3,2,4,Job/Career,Woman,3.8,Upper Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,4,4,4,4,4,3,2,Middlebury,Woman,3.8,Upper Middle Class,2,No,White,Dorm,First Year
+4,4,2,2,1,1,4,3,None,Other,3.8,Lower Class,0,Yes,Other,Dorm,Junior
+3,5,3,3,3,3,2,1,Friends,Woman,3.8,Upper Class,2,Yes,White,Dorm,First Year
+2,5,5,5,2,5,2,1,Job/Career,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+3,3,3,3,3,1,3,2,Other,Man,3.8,Upper Class,1,Yes,White,Dorm,Junior
+1,1,1,1,1,1,1,3,Friends,Woman,3.8,Upper Middle Class,5,No,Hispanic/Latino,House,Senior
+3,4,3,3,4,2,2,2,Job/Career,Woman,3.8,Lower Class,5,Yes,Asian/Asian American,House,Senior
+1,2,2,2,3,4,3,2,Other,Man,3.8,Lower Class,3,Yes,White,House,Junior
+4,5,4,4,3,3,5,1,Friends,Woman,3.8,Upper Middle Class,2,Yes,White,Dorm,Junior
+3,4,3,3,3,1,2,3,Friends,Woman,3.8,Upper Middle Class,0,No,Other,Dorm,First Year
+3,4,4,4,3,3,3,3,Friends,Woman,3.8,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,5,3,3,4,4,3,2,Friends,Woman,3.8,Upper Class,0,Yes,White,Dorm,Sophomore
+2,4,4,3,3,2,2,2,Friends,Woman,3.8,Upper Class,1,Yes,White,Dorm,Junior
+4,3,5,3,5,1,2,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Off Campus,Junior
+2,5,3,5,1,1,5,1,Job/Career,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,3,2,3,3,3,2,5,Friends,Man,3.8,Middle Class,1,Yes,White,Dorm,Senior
+4,4,5,4,1,1,4,1,Friends,Woman,3.8,Upper Class,1,Yes,White,Dorm,First Year
+4,4,4,4,2,2,2,2,Friends,Woman,3.8,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,3,3,3,1,1,4,2,Friends,Woman,3.8,Middle Class,2,No,Other,Dorm,First Year
+1,3,2,2,2,1,2,1,Friends,Woman,3.8,Lower Class,0,No,White,Dorm,Sophomore
+4,5,5,5,3,5,3,1,Friends,Man,3.8,Upper Middle Class,2,No,White,Dorm,Senior
+2,3,4,4,3,3,2,4,Graduate School,Man,3.8,Upper Middle Class,1,Yes,White,House,Junior
+2,4,3,4,1,3,3,2,Graduate School,Woman,3.8,Upper Class,2,Yes,White,Dorm,First Year
+4,4,3,4,3,4,2,1,Job/Career,Man,3.8,Upper Middle Class,1,Yes,White,Dorm,Senior
+5,5,5,5,1,3,5,1,Friends,Woman,3.8,Upper Middle Class,2,Yes,White,Dorm,Senior
+2,4,5,5,4,4,4,2,Middlebury,Man,3.8,Upper Middle Class,2,Yes,White,House,First Year
+3,3,3,3,3,1,4,4,Friends,Man,3.8,Upper Middle Class,2,Yes,White,Dorm,Junior
+4,4,5,3,3,4,4,1,Friends,Man,3.8,Upper Middle Class,0,Yes,White,Dorm,Junior
+4,4,4,4,2,5,4,1,Other,Man,3.8,Middle Class,0,No,White,Dorm,Sophomore
+4,5,5,5,1,1,3,4,Job/Career,Woman,3.8,Upper Middle Class,0,Yes,White,Dorm,Sophomore
+1,5,3,4,1,1,1,1,Friends,Woman,3.8,Middle Class,1,Yes,Other,Dorm,Senior
+2,4,4,4,1,4,4,2,Job/Career,Man,3.8,Middle Class,1,No,White,House,Sophomore
+5,5,4,5,1,5,5,2,Friends,Man,3.8,Upper Middle Class,3,Yes,White,Dorm,First Year
+1,5,4,4,5,5,5,1,Middlebury,Woman,3.8,Upper Middle Class,1,No,White,Dorm,First Year
+2,3,3,2,2,1,1,2,Friends,Woman,3.8,Upper Middle Class,3,Yes,White,Dorm,Sophomore
+3,5,3,3,2,2,4,2,Friends,Woman,3.8,Upper Class,2,Yes,White,Dorm,First Year
+4,5,4,4,5,2,2,5,Middlebury,Man,3.8,Upper Middle Class,3,Yes,White,Dorm,First Year
+2,4,2,3,1,1,4,1,Friends,Woman,3.81,Middle Class,3,Yes,Other,Dorm,Senior
+4,4,3,1,3,4,2,4,Friends,Man,3.81,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,4,2,3,1,1,3,3,Other,Man,3.82,Lower Class,1,Yes,White,Dorm,Senior
+2,5,4,3,5,4,2,1,Friends,Woman,3.82,Upper Middle Class,1,Yes,White,House,Senior
+4,4,4,4,2,2,4,4,Job/Career,Woman,3.82,Upper Middle Class,1,Yes,White,Off Campus,Senior
+4,4,1,1,1,1,4,1,Job/Career,Woman,3.82,Middle Class,1,No,White,Dorm,Senior
+2,4,4,4,5,3,3,4,Job/Career,Man,3.82,Upper Middle Class,1,No,Asian/Asian American,Dorm,Junior
+5,5,5,5,1,1,5,3,Friends,Man,3.84,Upper Class,2,Yes,White,Dorm,Senior
+2,4,4,3,4,2,2,4,Friends,Woman,3.84,Upper Middle Class,1,Yes,White,Dorm,Senior
+2,4,3,5,5,5,3,1,Job/Career,Man,3.84,Upper Middle Class,0,Yes,White,Dorm,Senior
+3,4,5,5,5,2,4,3,Job/Career,Woman,3.84,Upper Middle Class,2,Yes,White,Off Campus,Junior
+3,4,4,4,1,4,3,2,Job/Career,Woman,3.85,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+1,4,1,3,1,1,2,3,Friends,Woman,3.85,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,4,4,4,5,3,4,3,Friends,Man,3.85,Upper Middle Class,2,Yes,Other,Off Campus,Junior
+1,3,3,3,1,1,4,1,Job/Career,Woman,3.85,Upper Middle Class,0,Yes,Other,Dorm,Senior
+3,5,4,3,5,2,3,4,Middlebury,Man,3.85,Middle Class,2,No,White,Dorm,Sophomore
+3,3,2,2,1,3,2,1,Friends,Man,3.85,Middle Class,3,No,White,Dorm,Sophomore
+1,5,4,4,3,4,4,2,Job/Career,Woman,3.85,Upper Middle Class,3,Yes,Other,Dorm,First Year
+3,2,4,2,2,5,2,1,Middlebury,Woman,3.85,Middle Class,3,No,White,Dorm,Senior
+3,4,3,2,3,1,2,4,Family,Woman,3.85,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,3,5,1,1,4,3,Friends,Woman,3.86,Upper Middle Class,0,Yes,Other,Dorm,Senior
+2,2,3,3,2,5,2,1,Friends,Man,3.87,Upper Middle Class,1,Yes,White,Dorm,Senior
+4,4,5,4,3,3,4,1,None,Woman,3.87,Middle Class,2,Yes,White,Dorm,Junior
+3,3,3,3,1,1,5,1,Friends,Woman,3.87,Upper Middle Class,2,Yes,White,Dorm,Senior
+4,4,4,4,2,3,5,3,Friends,Woman,3.87,Upper Middle Class,1,Yes,White,Off Campus,Senior
+2,3,3,3,2,1,3,5,Graduate School,Woman,3.87,Upper Middle Class,1,Yes,White,Dorm,Junior
+4,5,5,5,1,1,4,1,Middlebury,Woman,3.88,Middle Class,1,Yes,White,House,Senior
+4,5,4,4,4,3,3,2,Friends,Woman,3.89,Upper Middle Class,2,Yes,Asian/Asian American,Dorm,Sophomore
+1,4,3,3,2,1,2,2,Friends,Woman,3.89,Middle Class,2,Yes,Asian/Asian American,Dorm,Junior
+5,5,5,5,1,1,3,4,Middlebury,Woman,3.89,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,3,3,3,3,3,3,3,Friends,Man,3.89,Upper Class,0,Yes,White,Off Campus,Senior
+2,3,4,2,1,2,2,1,Job/Career,Woman,3.89,Middle Class,1,No,White,Dorm,Senior
+4,5,5,5,4,5,3,2,Friends,Woman,3.9,Upper Class,2,Yes,White,Dorm,First Year
+3,5,5,4,2,5,2,2,Graduate School,Man,3.9,Upper Class,1,Yes,Other,Dorm,First Year
+2,4,3,2,4,1,2,1,Friends,Woman,3.9,Middle Class,0,Yes,White,House,Sophomore
+4,4,3,2,2,2,3,3,Friends,Woman,3.9,Upper Middle Class,3,No,White,Dorm,Senior
+3,3,4,3,4,2,5,4,Friends,Man,3.9,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,4,3,4,2,4,3,Job/Career,Woman,3.9,Middle Class,2,Yes,White,House,Junior
+5,3,5,3,1,1,5,3,Friends,Man,3.9,Upper Class,0,Yes,White,Dorm,Junior
+2,5,4,4,2,3,4,1,Friends,Woman,3.9,Upper Class,2,Yes,White,Dorm,Senior
+5,5,5,5,4,3,5,4,Graduate School,Man,3.9,Middle Class,2,Yes,White,Dorm,First Year
+3,5,3,5,4,1,3,2,Job/Career,Woman,3.9,Lower Class,1,Yes,Asian/Asian American,Dorm,First Year
+2,4,1,1,1,1,3,2,Friends,Woman,3.9,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+2,3,4,4,3,3,4,2,Friends,Woman,3.9,Upper Middle Class,2,Yes,White,Dorm,Senior
+3,4,4,3,3,1,3,2,Job/Career,Woman,3.9,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+4,5,4,4,3,3,5,2,Friends,Woman,3.9,Lower Class,3,No,White,Dorm,First Year
+3,3,4,4,1,1,2,1,Friends,Woman,3.9,Upper Middle Class,1,No,White,Dorm,Junior
+3,4,4,4,4,4,3,1,Friends,Man,3.9,Upper Middle Class,1,Yes,White,Dorm,Senior
+3,5,3,3,1,1,3,2,Friends,Woman,3.9,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,4,3,3,3,3,1,Job/Career,Woman,3.9,Upper Middle Class,0,Yes,White,Dorm,First Year
+3,5,4,4,5,4,3,3,Friends,Woman,3.9,Upper Class,3,Yes,White,Dorm,First Year
+3,4,4,4,3,4,3,2,Friends,Man,3.9,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,5,4,3,3,3,4,1,None,Woman,3.9,Middle Class,0,No,White,Off Campus,Junior
+3,5,5,5,5,3,4,1,Friends,Woman,3.9,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,5,4,4,2,2,4,3,Friends,Woman,3.9,Upper Middle Class,0,Yes,White,Dorm,Junior
+3,4,3,4,2,3,3,2,Friends,Man,3.9,Lower Class,0,Yes,Asian/Asian American,Dorm,First Year
+4,4,5,3,1,1,3,3,Middlebury,Man,3.9,Upper Class,1,Yes,White,Off Campus,Junior
+2,1,3,2,1,1,4,4,Friends,Man,3.9,Middle Class,0,No,Asian/Asian American,Dorm,Sophomore
+3,3,1,1,1,1,2,1,Friends,Woman,3.9,Middle Class,4,No,White,Off Campus,Junior
+2,5,3,3,1,1,1,4,Friends,Woman,3.9,Upper Middle Class,1,Yes,White,House,Senior
+3,4,4,4,2,2,4,2,Job/Career,Man,3.9,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,3,3,1,1,2,1,Friends,Woman,3.9,Upper Middle Class,2,Yes,White,Dorm,Senior
+2,4,4,4,4,2,2,2,Friends,Woman,3.9,Middle Class,2,Yes,White,Dorm,Sophomore
+3,3,4,1,2,1,2,5,Friends,Woman,3.9,Middle Class,1,Yes,Asian/Asian American,Dorm,Senior
+3,4,4,3,3,4,3,2,Other,Man,3.9,Upper Middle Class,1,Yes,White,Dorm,Sophomore
+4,3,5,3,2,1,3,1,Friends,Woman,3.9,Upper Middle Class,2,No,White,Dorm,Junior
+5,5,5,3,5,2,4,4,Friends,Man,3.92,Upper Middle Class,4,Yes,White,House,Senior
+5,4,5,5,5,1,5,3,Graduate School,Woman,3.92,Middle Class,1,Yes,White,Dorm,Junior
+3,4,3,3,3,1,3,4,Friends,Woman,3.92,Upper Middle Class,1,Yes,White,Dorm,Junior
+3,4,4,4,5,5,3,1,Friends,Man,3.93,Upper Middle Class,2,Yes,White,Dorm,Sophomore
+3,5,3,3,2,2,3,2,Other,Woman,3.94,Upper Middle Class,5,No,White,Dorm,Senior
+5,3,5,3,1,1,4,5,Graduate School,Woman,3.94,Upper Middle Class,3,No,White,Dorm,Junior
+5,1,4,2,1,1,2,1,None,Man,3.94,Upper Middle Class,1,No,White,Dorm,Junior
+5,5,5,5,1,1,5,1,Job/Career,Man,3.95,Upper Middle Class,2,Yes,White,Dorm,Senior
+2,4,4,4,3,2,4,3,Other,Man,3.95,Upper Middle Class,1,No,White,House,Senior
+1,3,2,2,4,3,1,4,Friends,Man,3.95,Upper Middle Class,3,Yes,White,Dorm,Senior
+4,3,5,4,4,2,4,2,Friends,Woman,3.96,Upper Middle Class,2,Yes,White,Dorm,Junior
+2,2,4,4,3,2,2,3,Job/Career,Woman,3.97,Middle Class,1,Yes,Asian/Asian American,Dorm,Junior
+4,3,5,3,1,1,5,3,Friends,Man,3.97,Middle Class,0,No,White,Dorm,First Year
+5,5,5,4,1,1,5,4,Graduate School,Woman,3.98,Middle Class,1,Yes,White,Dorm,Junior
+2,4,4,3,2,1,2,3,Friends,Woman,3.98,Upper Middle Class,1,Yes,White,House,Sophomore
+4,5,3,5,2,2,4,1,Friends,Woman,4,Upper Middle Class,0,No,White,Dorm,First Year
+2,4,3,4,4,4,1,2,Family,Other,4,Upper Class,2,No,African/African American,House,Senior
+4,5,5,3,3,1,5,1,None,Woman,4,Upper Middle Class,1,Yes,White,Dorm,First Year
+5,5,5,5,5,1,5,4,Middlebury,Woman,4,Middle Class,0,Yes,Asian/Asian American,Dorm,Senior
+5,5,5,5,2,4,4,1,None,Man,4,Upper Middle Class,2,Yes,White,Dorm,First Year
+3,4,5,3,4,2,3,2,Friends,Woman,4,Middle Class,1,Yes,White,Dorm,First Year
+4,4,3,4,4,3,3,3,Friends,Man,4,Upper Middle Class,5,No,White,Dorm,First Year
+4,4,3,3,4,1,4,3,Job/Career,Man,4,Upper Class,2,Yes,White,Dorm,First Year
+4,4,4,3,1,1,3,2,Other,Woman,4,Upper Middle Class,1,Yes,White,Dorm,First Year
+3,4,3,4,4,4,4,3,Friends,Woman,4,Upper Middle Class,3,No,White,Dorm,First Year
+3,3,4,3,3,3,3,2,Friends,Woman,4,Upper Middle Class,1,Yes,White,Dorm,First Year
+4,4,4,3,4,1,4,2,Friends,Woman,4,Upper Middle Class,1,Yes,White,Dorm,First Year
+2,5,3,1,1,1,4,3,Friends,Woman,4,Middle Class,2,No,White,Dorm,First Year
+4,4,4,4,3,2,4,1,None,Man,4,Upper Middle Class,3,Yes,White,Dorm,First Year
+2,4,4,4,5,4,3,1,Other,Woman,4,Upper Middle Class,2,Yes,White,Dorm,First Year
+2,4,2,3,4,2,2,4,Friends,Woman,4,Lower Class,0,No,White,Dorm,First Year
+2,5,5,5,4,4,3,3,Friends,Man,4,Upper Middle Class,2,Yes,White,Dorm,First Year
+4,4,4,4,2,2,5,4,Middlebury,Man,4,Middle Class,0,Yes,White,Dorm,First Year
+3,3,2,5,3,2,2,1,Job/Career,Man,4,Upper Middle Class,2,Yes,Asian/Asian American,Dorm,Sophomore
+3,4,5,5,3,5,5,3,Middlebury,Man,4,Lower Class,1,Yes,White,Dorm,First Year

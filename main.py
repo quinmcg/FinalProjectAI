@@ -43,7 +43,9 @@ class DecisionTree:
         graph.render(str(self.id))
 
     def classifyTree(self, observation):
+        print(observation.to_markdown())
         usedobs = observation.iloc[:, self.featureslist]
+        print(usedobs.to_markdown())
         usedobsnp = usedobs.to_numpy()
         print("USED OBS NP:")
         print(usedobsnp)
@@ -88,6 +90,7 @@ class RandomForest:
         vote1 = 0
         vote0 = 0
         for tree in self.forest:
+            print(str(tree.id))
             prediction = tree.classifyTree(observation)
             if prediction == 1:
                 print("1")

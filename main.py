@@ -9,7 +9,7 @@ class Main:
 
 
 
-    def dataload():
+    def decisionTree():
         # with open("relationshipstatus.csv", mode = 'r') as file_name:
         #     trainclassification = csv.reader(file_name)
         #
@@ -35,4 +35,6 @@ class Main:
         graph.render("midd")
 
 if __name__ == '__main__':
-    Main.dataload()
+
+
+    Main.decisionTree()

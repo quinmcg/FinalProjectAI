@@ -1,0 +1,31 @@
+
+
+Random Forest Road Map
+
+
+
+1.
+
+
+2.
+
+
+3.
+
+
+4.
+
+
+
+Tuning features:
+- number of trees in random forest
+- number of random features
+- size of bootstrapped dataset
+- criteria on which to split on
+    > Gini
+
+    > Entropy
+
+- Max depth of individual trees
+- minimum samples to split on at an internal node
+- max number of leaf nodes

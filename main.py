@@ -20,6 +20,7 @@ class DecisionTree:
 
     def __init__(self, features, classification, id):
         self.features = features
+        #print(features.to_markdown())
         self.classification = classification
         self.classifier = tree.DecisionTreeClassifier(min_samples_split = minSplit)
         self.numfeatures = np.random.randint(2, 17)
@@ -31,8 +32,8 @@ class DecisionTree:
 
     def buildTree(self):
 
-        self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
-        self.featuresarray = self.trainfeatures_dummy.to_numpy()
+        #self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
+        self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
         self.classifier.fit(self.featuresarray, self.classifarray)
 
@@ -43,14 +44,14 @@ class DecisionTree:
         graph.render(str(self.id))
 
     def classifyTree(self, observation):
-        print(observation.to_markdown())
+        #print(observation.to_markdown())
         usedobs = observation.iloc[:, self.featureslist]
-        print(usedobs.to_markdown())
+        #print(usedobs.to_markdown())
         usedobsnp = usedobs.to_numpy()
-        print("USED OBS NP:")
-        print(usedobsnp)
+        #print("USED OBS NP:")
+        #print(usedobsnp)
         prediction = self.classifier.predict(usedobsnp)
-        print(prediction)
+        #print(prediction)
         return prediction
 
 class RandomForest:
@@ -67,7 +68,7 @@ class RandomForest:
 
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
-            tempfeatures = pd.DataFrame(columns = collist)
+            tempfeatures = pd.DataFrame()
 
             for r in range(len(self.trainingclass)):
             #for r in range(10):
@@ -83,20 +84,23 @@ class RandomForest:
             newtree.buildTree()
             newtree.renderTree()
             self.forest.append(newtree)
-        print(len(self.forest))
+        #print(len(self.forest))
 
     def classfiyObservation(self, observation):
-        print("Classify:")
+        #print("Classify:")
         vote1 = 0
         vote0 = 0
         for tree in self.forest:
-            print("ID: " + str(tree.id))
-            print("NumFeatures: " + str(tree.numfeatures))
+            #print("ID: " + str(tree.id))
+            #print("NumFeatures: " + str(tree.numfeatures))
             prediction = tree.classifyTree(observation)
             if prediction == 1:
-                print("1")
+                #print("1")
+                vote1+=1
             else:
-                print("O")
+                #print("O")
+                vote0+=1
+        return (vote0+vote1)/self.numtrees
 
 
 if __name__ == '__main__':
@@ -114,6 +118,7 @@ if __name__ == '__main__':
 
         testingfeat = featuresdummy.iloc[850:]
         trainingfeat = featuresdummy.iloc[:850]
+        #print(trainingfeat.to_markdown())
 
         trainingclass = classification.iloc[:850]
         testingclass = classification.iloc[850:]
@@ -127,9 +132,12 @@ if __name__ == '__main__':
         rf = RandomForest(2, trainingfeat, trainingclass)
         rf.buildForest()
 
-        obs = testingfeat.iloc[[5]]
-        print(obs)
-        obsclass = testingclass.iloc[[5]].to_numpy()
+        obsnum = 18
 
+        obs = testingfeat.iloc[[obsnum]]
+        print(obs)
+        obsclass = testingclass.iloc[[obsnum]].to_numpy()
+        print("Prediction: ")
         print(str(rf.classfiyObservation(obs)))
+        print("Actual: ")
         print(str(obsclass))

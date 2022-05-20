@@ -4,19 +4,6 @@ Random Forest Road Map
 
 
 
-1.
-
-
-2.
-
-
-3.
-
-
-4.
-
-
-
 Tuning features:
 - number of trees in random forest
 - number of random features

@@ -7,8 +7,6 @@ import matplotlib
 
 class Main:
 
-
-
     def decisionTree():
         # with open("relationshipstatus.csv", mode = 'r') as file_name:
         #     trainclassification = csv.reader(file_name)

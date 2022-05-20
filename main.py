@@ -90,7 +90,8 @@ class RandomForest:
         vote1 = 0
         vote0 = 0
         for tree in self.forest:
-            print(str(tree.id))
+            print("ID: " + str(tree.id))
+            print("NumFeatures: " + str(tree.numfeatures))
             prediction = tree.classifyTree(observation)
             if prediction == 1:
                 print("1")

@@ -20,19 +20,22 @@ class DecisionTree:
 
     def __init__(self, features, classification, id):
         self.features = features
+        print
         self.classification = classification
         self.classifier = tree.DecisionTreeClassifier(min_samples_split = minSplit)
         self.numfeatures = np.random.randint(2, 17)
         self.featureslist = random.sample(range(17), self.numfeatures)
         #print(self.featureslist)
         self.usedfeatures = self.features.iloc[:, self.featureslist]
+        #print(self.features.to_markdown())
         #print(self.usedfeatures.to_markdown())
         self.id = id
 
     def buildTree(self):
 
-        self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
-        self.featuresarray = self.trainfeatures_dummy.to_numpy()
+        #self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
+        #print(self.trainfeatures_dummy.to_markdown())
+        self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
         self.classifier.fit(self.featuresarray, self.classifarray)
 
@@ -67,7 +70,7 @@ class RandomForest:
 
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
-            tempfeatures = pd.DataFrame(columns = collist)
+            tempfeatures = pd.DataFrame()
 
             for r in range(len(self.trainingclass)):
             #for r in range(10):
@@ -77,7 +80,7 @@ class RandomForest:
                 tempclassification = pd.concat([tempclassification, currclass], axis = 0)
                 tempfeatures = pd.concat([tempfeatures, currfeatures], sort=False, axis = 0)
 
-            #print(tempfeatures.to_markdown())
+            print(tempfeatures.to_markdown())
             #print(tempclassification.to_markdown())
             newtree = DecisionTree(tempfeatures, tempclassification, tree)
             newtree.buildTree()

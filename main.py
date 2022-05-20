@@ -42,25 +42,36 @@ class DecisionTree:
         graph = graphviz.Source(dot_data)
         graph.render(str(self.id))
 
+    def classifyTree(self, observation):
+        usedobs = observation.iloc[:, self.featureslist]
+        usedobsnp = usedobs.to_numpy()
+        print("USED OBS NP:")
+        print(usedobsnp)
+        prediction = self.classifier.predict(usedobsnp)
+        print(prediction)
+        return prediction
+
 class RandomForest:
 
-    def __init__(self, numtrees):
+    def __init__(self, numtrees, trainingfeat, trainingclass):
         self.forest = []
         self.numtrees = numtrees
-
+        self.trainingfeat = trainingfeat
+        self.trainingclass = trainingclass
 
     def buildForest(self):
         print("Build")
+
 
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
             tempfeatures = pd.DataFrame(columns = collist)
 
-            for r in range(len(trainclassification)):
+            for r in range(len(self.trainingclass)):
             #for r in range(10):
-                index = np.random.randint(0, len(trainclassification))
-                currfeatures = trainfeatures.iloc[[index]]
-                currclass = trainclassification.iloc[[index]]
+                index = np.random.randint(0, len(self.trainingclass))
+                currfeatures = self.trainingfeat.iloc[[index]]
+                currclass = self.trainingclass.iloc[[index]]
                 tempclassification = pd.concat([tempclassification, currclass], axis = 0)
                 tempfeatures = pd.concat([tempfeatures, currfeatures], sort=False, axis = 0)
 
@@ -72,25 +83,49 @@ class RandomForest:
             self.forest.append(newtree)
         print(len(self.forest))
 
-    def classfiyObservation(self):
+    def classfiyObservation(self, observation):
         print("Classify:")
+        vote1 = 0
+        vote0 = 0
+        for tree in self.forest:
+            prediction = tree.classifyTree(observation)
+            if prediction == 1:
+                print("1")
+            else:
+                print("O")
 
 
 if __name__ == '__main__':
 
-        trainclassification = pd.read_csv("trainingclass.csv")
-        trainfeatures = pd.read_csv("trainingfeat.csv")
+        # trainclassification = pd.read_csv("trainingclass.csv")
+        # trainfeatures = pd.read_csv("trainingfeat.csv")
+        #
+        # testclass = pd.read_csv("testingclass.csv")
+        # testfeat = pd.read_csv("testingfeat.csv")
 
-        testclass = pd.read_csv("testingclass.csv")
-        testfeat = pd.read_csv("testingfeat.csv")
+        features = pd.read_csv("trainingfeatures.csv")
+        classification = pd.read_csv("relationshipstatus.csv")
 
+        featuresdummy = pd.get_dummies(features)
 
+        testingfeat = featuresdummy.iloc[850:]
+        trainingfeat = featuresdummy.iloc[:850]
 
-        #print(trainfeatures.to_markdown())
+        trainingclass = classification.iloc[:850]
+        testingclass = classification.iloc[850:]
+
+        #print(trainingfeat.to_markdown())
 
         #newtree = DecisionTree(trainfeatures, trainclassification)
         #newtree.buildTree()
         #newtree.renderTree()
 
-        rf = RandomForest(2)
+        rf = RandomForest(2, trainingfeat, trainingclass)
         rf.buildForest()
+
+        obs = testingfeat.iloc[[5]]
+        print(obs)
+        obsclass = testingclass.iloc[[5]].to_numpy()
+
+        print(str(rf.classfiyObservation(obs)))
+        print(str(obsclass))

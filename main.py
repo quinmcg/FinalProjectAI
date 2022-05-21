@@ -12,7 +12,7 @@ import random
 
 minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
-forestsize = 100
+forestsize = 500
 
 collist = ["midd_find_relationship", "midd_find_hookup", "midd_goes_relationship" ,"midd_goes_hookup", "midd_lookingfor_relationship", "midd_lookingfor_hookup",	"midd_opps_newpeople", "mrtl_potential_date", "find_partner", "gender", "gpa", "class", "siblings", "parents_married", "race", "housing", "year"]
 
@@ -135,7 +135,8 @@ class RandomForest:
                 numwrong_neg += 1
             elif predictclass == 0 and obsclassactual == 1:
                 numwrong_pos += 1
-        print("ACCURACY TATISTICS\n=====================")
+        print("ACCURACY STATISTICS\n=====================")
+        print("Number of Trees: " + str(forestsize))
         print("True Positives: " + str(numcorrect_pos))
         print("True Negatives: " + str(numcorrect_neg))
         print("False Positives: " + str(numwrong_neg))

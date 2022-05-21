@@ -12,7 +12,7 @@ import random
 
 minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
-forestsize = 10
+forestsize = 100
 
 collist = ["midd_find_relationship", "midd_find_hookup", "midd_goes_relationship" ,"midd_goes_hookup", "midd_lookingfor_relationship", "midd_lookingfor_hookup",	"midd_opps_newpeople", "mrtl_potential_date", "find_partner", "gender", "gpa", "class", "siblings", "parents_married", "race", "housing", "year"]
 
@@ -156,12 +156,12 @@ if __name__ == '__main__':
 
         featuresdummy = pd.get_dummies(features)
 
-        testingfeat = featuresdummy.iloc[850:]
-        trainingfeat = featuresdummy.iloc[:850]
+        testingfeat = featuresdummy.iloc[900:]
+        trainingfeat = featuresdummy.iloc[:900]
         #print(trainingfeat.to_markdown())
 
-        trainingclass = classification.iloc[:850]
-        testingclass = classification.iloc[850:]
+        trainingclass = classification.iloc[:900]
+        testingclass = classification.iloc[900:]
 
         #print(trainingfeat.to_markdown())
 

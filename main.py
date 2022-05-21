@@ -83,7 +83,7 @@ class RandomForest:
             #print(tempclassification.to_markdown())
             newtree = DecisionTree(tempfeatures, tempclassification, tree)
             newtree.buildTree()
-            newtree.renderTree()
+            #newtree.renderTree()
             self.forest.append(newtree)
         #print(len(self.forest))
 

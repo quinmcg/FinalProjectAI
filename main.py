@@ -6,6 +6,8 @@ import pandas as pd
 import matplotlib
 from tabulate import tabulate
 import random
+import sys, getopt
+import argparse
 
 # List of Tuning Parameters as Global Variables (To Do/Decide on)
 # Global so that we keep them constant for all decision trees
@@ -13,9 +15,6 @@ import random
 minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
 forestsize = 300
-
-collist = ["midd_find_relationship", "midd_find_hookup", "midd_goes_relationship" ,"midd_goes_hookup", "midd_lookingfor_relationship", "midd_lookingfor_hookup",	"midd_opps_newpeople", "mrtl_potential_date", "find_partner", "gender", "gpa", "class", "siblings", "parents_married", "race", "housing", "year"]
-
 
 class DecisionTree:
 
@@ -34,7 +33,7 @@ class DecisionTree:
     def buildTree(self):
         if (self.id % 10 == 0):
             print("Building Tree #" + str(self.id))
-        #self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
+     
         self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
         self.classifier.fit(self.featuresarray, self.classifarray)
@@ -46,14 +45,9 @@ class DecisionTree:
         graph.render(str(self.id))
 
     def classifyTree(self, observation):
-        #print(observation.to_markdown())
         usedobs = observation.iloc[:, self.featureslist]
-        #print(usedobs.to_markdown())
         usedobsnp = usedobs.to_numpy()
-        #print("USED OBS NP:")
-        #print(usedobsnp)
         prediction = self.classifier.predict(usedobsnp)
-        #print(prediction)
         return prediction
 
 class RandomForest:
@@ -68,21 +62,17 @@ class RandomForest:
     def buildForest(self):
         print("Building Forest using " + self.method + " method")
 
-
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
             tempfeatures = pd.DataFrame()
 
             for r in range(len(self.trainingclass)):
-            #for r in range(10):
                 index = np.random.randint(0, len(self.trainingclass))
                 currfeatures = self.trainingfeat.iloc[[index]]
                 currclass = self.trainingclass.iloc[[index]]
                 tempclassification = pd.concat([tempclassification, currclass], axis = 0)
                 tempfeatures = pd.concat([tempfeatures, currfeatures], sort=False, axis = 0)
 
-            #print(tempfeatures.to_markdown())
-            #print(tempclassification.to_markdown())
             newtree = DecisionTree(tempfeatures, tempclassification, self.method, tree)
             newtree.buildTree()
             #newtree.renderTree()
@@ -139,7 +129,7 @@ class RandomForest:
                 numwrong_pos += 1
         accuracy = (numcorrect_neg + numcorrect_pos) / len(testingclass)
         print("\n\nOVERALL FOREST STATISTICS\n=====================")
-        print("Number of Trees: " + str(forestsize))
+        print("Number of Trees: " + str(self.numtrees))
         print("Method Type: " + str(self.method))
         print("TOTAL ACCURACY: " + str(accuracy))
         print("\nDETAILED ACCURACY STATISTICS\n=====================")
@@ -159,37 +149,40 @@ if __name__ == '__main__':
         #
         # testclass = pd.read_csv("testingclass.csv")
         # testfeat = pd.read_csv("testingfeat.csv")
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-f", "--forest", nargs='?', help="specify forrest size (default = 300)", type=int, const=300)
+        parser.add_argument("-u", "--user", help = "-u for user input test case", action="store_true")
+        parser.add_argument("-m", "--entropy", nargs='?', help = "-m to specify method, so far entropy and gini", type=str, const="gini")
+        args = parser.parse_args()
 
         features = pd.read_csv("trainingfeatures.csv")
         classification = pd.read_csv("relationshipstatus.csv")
 
         featuresdummy = pd.get_dummies(features)
-
-        testingfeat = featuresdummy.iloc[900:]
         trainingfeat = featuresdummy.iloc[:900]
-        #print(trainingfeat.to_markdown())
-
         trainingclass = classification.iloc[:900]
-        testingclass = classification.iloc[900:]
 
-        #print(trainingfeat.to_markdown())
 
-        #newtree = DecisionTree(trainfeatures, trainclassification)
-        #newtree.buildTree()
-        #newtree.renderTree()
+        if args.user:
+            #user goes through survey
+            print("args.user")
+        else:
+            testingfeat = featuresdummy.iloc[900:]
+            testingclass = classification.iloc[900:]
 
-        rf = RandomForest(forestsize, trainingfeat, trainingclass, "gini")
+        if args.entropy == 'entropy':
+            print("using entropy")
+            method = "entropy"
+        elif args.entropy == 'gini':
+            print("using gini")
+            method = "gini"
+        else:
+            print("error: Method needs to be either gini or entropy")
+            sys.exit()
+
+        rf = RandomForest(args.forest, trainingfeat, trainingclass, method)
         rf.buildForest()
-        #obsnum = 18
 
-        rf2 = RandomForest(forestsize, trainingfeat, trainingclass, "entropy")
-        rf2.buildForest()
-        #obsnum = 18
-
-        #rf3 = RandomForest(forestsize, trainingfeat, trainingclass, "log_loss")
-        #rf3.buildForest()
-        #obsnum = 18
 
         rf.testAccuracy(testingfeat, testingclass)
-        rf2.testAccuracy(testingfeat, testingclass)
-        #rf3.testAccuracy(testingfeat, testingclass)
+

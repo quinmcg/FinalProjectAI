@@ -12,7 +12,7 @@ import random
 
 minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
-forestsize = 50
+forestsize = 300
 
 collist = ["midd_find_relationship", "midd_find_hookup", "midd_goes_relationship" ,"midd_goes_hookup", "midd_lookingfor_relationship", "midd_lookingfor_hookup",	"midd_opps_newpeople", "mrtl_potential_date", "find_partner", "gender", "gpa", "class", "siblings", "parents_married", "race", "housing", "year"]
 

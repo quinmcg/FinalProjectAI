@@ -86,7 +86,7 @@ class RandomForest:
             self.forest.append(newtree)
         #print(len(self.forest))
 
-    def classfiyObservation(self, observation):
+    def classfiyObservation(self, observation, method):
         #print("Classify:")
         vote1 = 0
         vote0 = 0
@@ -100,7 +100,46 @@ class RandomForest:
             else:
                 #print("O")
                 vote0+=1
-        return (vote0+vote1)/self.numtrees
+        #method: indicates whether we want it to return average (ie probability it is 1), or max
+        #MAX:
+        if method == 1:
+            if vote0 >= vote1:
+                return 0
+            else:
+                return 1
+        #AVERAGE
+        else:
+            return round((vote0+vote1)/self.numtrees)
+
+    def testAccuracy(self, testingfeat, testingclass):
+        self.predictionaccuracy = []
+                                # Prediction, Guess
+        numcorrect_pos = 0      #   1, 1
+        numcorrect_neg = 0      #   0, 0
+        numwrong_pos = 0        #   0, 1
+        numwrong_neg = 0        #   1, 0
+
+        #print(testingclass.to_markdown())
+
+        for obsnum in range(len(testingclass)):
+            observation = testingfeat.iloc[[obsnum]]
+            obsclassactual = testingclass.iloc[[obsnum]].to_numpy()
+            predictclass = self.classfiyObservation(observation, 1)
+            print("(" + str(predictclass) + ", " + str(obsclassactual) + ")")
+            if predictclass == 1 and obsclassactual == 1:
+                numcorrect_pos += 1
+            elif predictclass == 0 and obsclassactual == 0:
+                numcorrect_neg += 1
+            elif predictclass == 1 and obsclassactual == 0:
+                numwrong_neg += 1
+            elif predictclass == 0 and obsclassactual == 1:
+                numwrong_pos += 1
+        print("ACCURACY TATISTICS\n=====================")
+        print("True Positives: " + str(numcorrect_pos))
+        print("True Negatives: " + str(numcorrect_neg))
+        print("False Positives: " + str(numwrong_neg))
+        print("False Negatives: " + str(numwrong_pos))
+
 
 
 if __name__ == '__main__':
@@ -129,15 +168,7 @@ if __name__ == '__main__':
         #newtree.buildTree()
         #newtree.renderTree()
 
-        rf = RandomForest(2, trainingfeat, trainingclass)
+        rf = RandomForest(10, trainingfeat, trainingclass)
         rf.buildForest()
-
-        obsnum = 18
-
-        obs = testingfeat.iloc[[obsnum]]
-        print(obs)
-        obsclass = testingclass.iloc[[obsnum]].to_numpy()
-        print("Prediction: ")
-        print(str(rf.classfiyObservation(obs)))
-        print("Actual: ")
-        print(str(obsclass))
+        #obsnum = 18
+        rf.testAccuracy(testingfeat, testingclass)

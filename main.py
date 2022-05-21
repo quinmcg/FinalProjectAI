@@ -12,18 +12,18 @@ import random
 
 minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
-forestsize = 500
+forestsize = 50
 
 collist = ["midd_find_relationship", "midd_find_hookup", "midd_goes_relationship" ,"midd_goes_hookup", "midd_lookingfor_relationship", "midd_lookingfor_hookup",	"midd_opps_newpeople", "mrtl_potential_date", "find_partner", "gender", "gpa", "class", "siblings", "parents_married", "race", "housing", "year"]
 
 
 class DecisionTree:
 
-    def __init__(self, features, classification, id):
+    def __init__(self, features, classification, method, id):
         self.features = features
         #print(features.to_markdown())
         self.classification = classification
-        self.classifier = tree.DecisionTreeClassifier(min_samples_split = minSplit)
+        self.classifier = tree.DecisionTreeClassifier(criterion = method, min_samples_split = minSplit)
         self.numfeatures = np.random.randint(2, 17)
         self.featureslist = random.sample(range(17), self.numfeatures)
         #print(self.featureslist)
@@ -32,7 +32,8 @@ class DecisionTree:
         self.id = id
 
     def buildTree(self):
-
+        if (self.id % 10 == 0):
+            print("Building Tree #" + str(self.id))
         #self.trainfeatures_dummy = pd.get_dummies(self.usedfeatures)
         self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
@@ -57,14 +58,15 @@ class DecisionTree:
 
 class RandomForest:
 
-    def __init__(self, numtrees, trainingfeat, trainingclass):
+    def __init__(self, numtrees, trainingfeat, trainingclass, method):
         self.forest = []
         self.numtrees = numtrees
         self.trainingfeat = trainingfeat
         self.trainingclass = trainingclass
+        self.method = method
 
     def buildForest(self):
-        print("Build")
+        print("Building Forest using " + self.method + " method")
 
 
         for tree in range(self.numtrees):
@@ -81,7 +83,7 @@ class RandomForest:
 
             #print(tempfeatures.to_markdown())
             #print(tempclassification.to_markdown())
-            newtree = DecisionTree(tempfeatures, tempclassification, tree)
+            newtree = DecisionTree(tempfeatures, tempclassification, self.method, tree)
             newtree.buildTree()
             #newtree.renderTree()
             self.forest.append(newtree)
@@ -126,7 +128,7 @@ class RandomForest:
             observation = testingfeat.iloc[[obsnum]]
             obsclassactual = testingclass.iloc[[obsnum]].to_numpy()
             predictclass = self.classfiyObservation(observation, 1)
-            print("(" + str(predictclass) + ", " + str(obsclassactual) + ")")
+            #print("(" + str(predictclass) + ", " + str(obsclassactual) + ")")
             if predictclass == 1 and obsclassactual == 1:
                 numcorrect_pos += 1
             elif predictclass == 0 and obsclassactual == 0:
@@ -135,12 +137,18 @@ class RandomForest:
                 numwrong_neg += 1
             elif predictclass == 0 and obsclassactual == 1:
                 numwrong_pos += 1
-        print("ACCURACY STATISTICS\n=====================")
+        accuracy = (numcorrect_neg + numcorrect_pos) / len(testingclass)
+        print("\n\nOVERALL FOREST STATISTICS\n=====================")
         print("Number of Trees: " + str(forestsize))
+        print("Method Type: " + str(self.method))
+        print("TOTAL ACCURACY: " + str(accuracy))
+        print("\nDETAILED ACCURACY STATISTICS\n=====================")
         print("True Positives: " + str(numcorrect_pos))
         print("True Negatives: " + str(numcorrect_neg))
         print("False Positives: " + str(numwrong_neg))
         print("False Negatives: " + str(numwrong_pos))
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++\n")
+
 
 
 
@@ -170,7 +178,18 @@ if __name__ == '__main__':
         #newtree.buildTree()
         #newtree.renderTree()
 
-        rf = RandomForest(forestsize, trainingfeat, trainingclass)
+        rf = RandomForest(forestsize, trainingfeat, trainingclass, "gini")
         rf.buildForest()
         #obsnum = 18
+
+        rf2 = RandomForest(forestsize, trainingfeat, trainingclass, "entropy")
+        rf2.buildForest()
+        #obsnum = 18
+
+        #rf3 = RandomForest(forestsize, trainingfeat, trainingclass, "log_loss")
+        #rf3.buildForest()
+        #obsnum = 18
+
         rf.testAccuracy(testingfeat, testingclass)
+        rf2.testAccuracy(testingfeat, testingclass)
+        #rf3.testAccuracy(testingfeat, testingclass)

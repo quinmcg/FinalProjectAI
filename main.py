@@ -19,7 +19,7 @@ forestsize = 300
 
 class DecisionTree:
 
-    def __init__(self, features, classification, splitmethod, maxdepth, minsampsplit, id):
+    def __init__(self, features, classification, splitmethod, maxdepth, minsampsplit, minimpuritydecrease, id):
         self.features = features
         #print(features.to_markdown())
         self.classification = classification
@@ -27,8 +27,9 @@ class DecisionTree:
         #Tuning Parameters
         self.maxdepth = maxdepth
         self.minsampsplit = minsampsplit
+        self.minimpuritydecrease = minimpuritydecrease
 
-        self.classifier = tree.DecisionTreeClassifier(criterion = splitmethod, min_samples_split = self.minsampsplit, max_depth = self.maxdepth)
+        self.classifier = tree.DecisionTreeClassifier(criterion = splitmethod, min_samples_split = self.minsampsplit, max_depth = self.maxdepth, min_impurity_decrease = self.minimpuritydecrease)
         self.numfeatures = np.random.randint(2, 17)
         self.featureslist = random.sample(range(17), self.numfeatures)
         #print(self.featureslist)
@@ -38,8 +39,8 @@ class DecisionTree:
 
 
     def buildTree(self):
-        if (self.id % 10 == 0):
-            print("Progress: built " + str(self.id) + " trees...")
+        #if (self.id % 10 == 0):
+            #print("Progress: built " + str(self.id) + " trees...")
 
         self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
@@ -60,7 +61,7 @@ class DecisionTree:
 
 class RandomForest:
 
-    def __init__(self, numtrees, trainingfeat, trainingclass, method, maxdepth, minsampsplit):
+    def __init__(self, numtrees, trainingfeat, trainingclass, method, maxdepth, minsampsplit, minimpuritydecrease):
         self.forest = []
         self.numtrees = numtrees
         self.trainingfeat = trainingfeat
@@ -68,6 +69,7 @@ class RandomForest:
         self.splitmethod = method
         self.maxdepth = maxdepth
         self.minsampsplit = minsampsplit
+        self.minimpuritydecrease = minimpuritydecrease
 
     def buildForest(self):
         self.starttime = time.time()
@@ -85,7 +87,7 @@ class RandomForest:
                 tempclassification = pd.concat([tempclassification, currclass], axis = 0)
                 tempfeatures = pd.concat([tempfeatures, currfeatures], sort=False, axis = 0)
 
-            newtree = DecisionTree(tempfeatures, tempclassification, self.splitmethod, self.maxdepth, self.minsampsplit, tree)
+            newtree = DecisionTree(tempfeatures, tempclassification, self.splitmethod, self.maxdepth, self.minsampsplit, self.minimpuritydecrease, tree)
             newtree.buildTree()
             #newtree.renderTree()
             self.forest.append(newtree)
@@ -145,7 +147,8 @@ class RandomForest:
                 self.numwrong_pos += 1
 
         self.accuracy = (self.numcorrect_neg + self.numcorrect_pos) / len(testingclass)
-        self.printAccuracy()
+
+        #self.printAccuracy()
 
     def printAccuracy(self):
         print("\n\nOVERALL FOREST STATISTICS\n=====================")
@@ -161,40 +164,48 @@ class RandomForest:
 
 
 def findOptimal(forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass):
-    print("Hi")
+    #print("Hi")
     #Max Depth:
-    #maxdepthoptions = [2, 5, 8, 11, None]
+    maxdepthoptions = [2, 5, 8, 11, None]
     #TEST:
-    maxdepthoptions = [2, None]
+    #maxdepthoptions = [2, None]
 
     #Min Samples Split
-    minsamplessplitoptions = [2, 5]
-    #minsamplessplitoptions = [2, 5, 10, 20]
+    #minsamplessplitoptions = [2, 5]
+    minsamplessplitoptions = [2, 5, 10, 20]
 
     #Min Impurity Decrease
-    minimpuritydecreaserange = [0, 0.2, 0.02]
+    minimpuritydecreaserange = [0, 20, 2]
 
-    #CCP Alpha
-    ccpalpharange = [0, 0.2, 0.02]
 
     #Default
     print("Building Default")
-    currOptimalTree = RandomForest(args.forest, trainingfeat, trainingclass, method, None, 2)
+    currOptimalTree = RandomForest(args.forest, trainingfeat, trainingclass, method, None, 2, 0.0)
     currOptimalTree.buildForest()
 
     currOptimalTree.testAccuracy(testingfeat, testingclass)
 
+    totaltreestesting = len(maxdepthoptions) * len(minsamplessplitoptions) * 10
+    print("Total Number of Forests to Create: " + str(totaltreestesting))
+
     for maxdepth in maxdepthoptions:
         for minsampsplit in minsamplessplitoptions:
-            rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit)
-            rf.buildForest()
-            rf.testAccuracy(testingfeat, testingclass)
+            for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
+                minimp = minimpuritydecrease / 10
+                rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
+                rf.buildForest()
+                rf.testAccuracy(testingfeat, testingclass)
 
-            if rf.accuracy > currOptimalTree.accuracy:
-                currOptimalTree = rf
+                if rf.accuracy > currOptimalTree.accuracy:
+                    currOptimalTree = rf
 
     print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
-    print("Optimal Methods: " + str(currOptimalTree.maxdepth) + ", " + str(currOptimalTree.minsampsplit))
+    print("Optimal Methods: ")
+    print("Max Depth: + " + str(currOptimalTree.maxdepth))
+    print("Min Sample Split: " + str(currOptimalTree.minsampsplit))
+    print("Minimum Impurity Decrease: " + str(currOptimalTree.minimpuritydecrease))
+    print("Time to Build the Forest: " + str(currOptimalTree.buildtime))
+
 
 if __name__ == '__main__':
 

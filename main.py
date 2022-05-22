@@ -279,7 +279,11 @@ if __name__ == '__main__':
             maxdepth = 8
             minsampsplit = 20
             minimpuritydecrease = 0.0
-            for i in range(3):
-                rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimpuritydecrease)
-                rf.buildForest()
-                rf.testAccuracy(peerfeatures, peerclass)
+            #for i in range(3):
+            rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimpuritydecrease)
+            rf.buildForest()
+            print("\n\n\n***Accuracy on Test Data***")
+            rf.testAccuracy(testingfeat, testingclass)
+
+            print("\n\n\n *** ACCURACY ON PEER DATA (2022 DATA)***")
+            rf.testAccuracy(peerfeatures, peerclass)

@@ -192,23 +192,23 @@ class RandomForest:
         totaltreestesting = len(maxdepthoptions) * len(minsamplessplitoptions) * 10
         print("Total Number of Forests to Create: " + str(totaltreestesting))
 
-    for maxdepth in maxdepthoptions:
-        for minsampsplit in minsamplessplitoptions:
-            for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
-                minimp = minimpuritydecrease / 100
-                rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
-                rf.buildForest()
-                rf.testAccuracy(testingfeat, testingclass)
+        for maxdepth in maxdepthoptions:
+            for minsampsplit in minsamplessplitoptions:
+                for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
+                    minimp = minimpuritydecrease / 100
+                    rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
+                    rf.buildForest()
+                    rf.testAccuracy(testingfeat, testingclass)
 
                     if rf.accuracy > currOptimalTree.accuracy:
                         currOptimalTree = rf
 
-        print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
-        print("Optimal Methods: ")
-        print("Max Depth: + " + str(currOptimalTree.maxdepth))
-        print("Min Sample Split: " + str(currOptimalTree.minsampsplit))
-        print("Minimum Impurity Decrease: " + str(currOptimalTree.minimpuritydecrease))
-        print("Time to Build the Forest: " + str(currOptimalTree.buildtime))
+            print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
+            print("Optimal Methods: ")
+            print("Max Depth: + " + str(currOptimalTree.maxdepth))
+            print("Min Sample Split: " + str(currOptimalTree.minsampsplit))
+            print("Minimum Impurity Decrease: " + str(currOptimalTree.minimpuritydecrease))
+            print("Time to Build the Forest: " + str(currOptimalTree.buildtime))
 
 
 if __name__ == '__main__':
@@ -253,9 +253,15 @@ if __name__ == '__main__':
         #                   FALSE <- Application Use
 
         findoptimalswitch = False
+        onefulltree = True
 
         if findoptimalswitch == True:
             findOptimal(args.forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass)
+
+        elif onefulltree:
+            dec = DecisionTree(featuresdummy,classification,splitmethod,None,2,0.0,1)
+            dec.buildTree()
+            dec.renderTree()
 
         else:
             #OPTIMAL VALUES FOUND FROM findOptimal():

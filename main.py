@@ -74,7 +74,11 @@ class RandomForest:
     def buildForest(self):
         self.starttime = time.time()
 
-        print("Building Forest using " + self.splitmethod + " method")
+        print("Building Forest using the following methods:")
+        print("Split method: " + str(self.splitmethod))
+        print("Min Sample Split: " + str(self.minsampsplit))
+        print("Max Depth: " + str(self.maxdepth))
+        print("Min Impurity Decrease: " + str(self.minimpuritydecrease))
 
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
@@ -93,7 +97,7 @@ class RandomForest:
             self.forest.append(newtree)
         self.endtime = time.time()
         self.buildtime = self.endtime - self.starttime
-        print("Completed Building Forest in " + str(self.buildtime) + " seconds")
+        print("Completed Building Forest in " + str(self.buildtime) + " seconds\n")
 
         #print(len(self.forest))
 

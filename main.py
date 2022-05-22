@@ -17,6 +17,7 @@ import time
 maxnumfeatures = 17 #calculated without dummies
 forestsize = 300
 
+
 class DecisionTree:
 
     def __init__(self, features, classification, splitmethod, maxdepth, minsampsplit, minimpuritydecrease, id):
@@ -30,9 +31,8 @@ class DecisionTree:
         self.minimpuritydecrease = minimpuritydecrease
 
         self.classifier = tree.DecisionTreeClassifier(criterion = splitmethod, min_samples_split = self.minsampsplit, max_depth = self.maxdepth, min_impurity_decrease = self.minimpuritydecrease)
-        self.numfeatures = np.random.randint(2, 17)
-        self.featureslist = random.sample(range(17), self.numfeatures)
-        #print(self.featureslist)
+        self.numfeatures = np.random.randint(2, 37)
+        self.featureslist = random.sample(range(37), self.numfeatures)
         self.usedfeatures = self.features.iloc[:, self.featureslist]
         #print(self.usedfeatures.to_markdown())
         self.id = id
@@ -47,9 +47,11 @@ class DecisionTree:
         self.classifier.fit(self.featuresarray, self.classifarray)
 
 
-    def renderTree(self):
+    def renderTree(self, collist):
         tree.plot_tree(self.classifier)
-        dot_data = tree.export_graphviz(self.classifier, out_file=None)
+        if(collist.size() < 1):
+            collist = None
+        dot_data = tree.export_graphviz(self.classifier, out_file=None, feature_names = collist, filled=True)
         graph = graphviz.Source(dot_data)
         graph.render(str(self.id))
 
@@ -258,10 +260,11 @@ if __name__ == '__main__':
         if findoptimalswitch == True:
             findOptimal(args.forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass)
 
-        elif onefulltree:
-            dec = DecisionTree(featuresdummy,classification,splitmethod,None,2,0.0,1)
-            dec.buildTree()
-            dec.renderTree()
+        # elif onefulltree:
+        #     dec = DecisionTree(featuresdummy,classification,splitmethod,None,2,0.0,1)
+        #     dec.buildTree()
+        #     dec.renderTree(list(featuresdummy.columns))
+        #     #print(list(featuresdummy.columns))
 
         else:
             #OPTIMAL VALUES FOUND FROM findOptimal():

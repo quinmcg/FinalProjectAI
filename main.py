@@ -228,6 +228,9 @@ if __name__ == '__main__':
         features = pd.read_csv("trainingfeatures.csv")
         classification = pd.read_csv("relationshipstatus.csv")
 
+        peerfeatures = pd.read_csv("currentfeatures.csv")
+        peerclassification = pd.read_csv("currentclassification.csv")
+
         featuresdummy = pd.get_dummies(features)
         trainingfeat = featuresdummy.iloc[:900]
         trainingclass = classification.iloc[:900]
@@ -237,8 +240,11 @@ if __name__ == '__main__':
             #user goes through survey
             print("args.user")
         else:
-            testingfeat = featuresdummy.iloc[900:]
-            testingclass = classification.iloc[900:]
+            testingfeat = featuresdummy.iloc[900:966]
+            testingclass = classification.iloc[900:966]
+
+        peerfeatures = featuresdummy.iloc[966:]
+        peerclass = classification.iloc[966:]
 
         if args.entropy == 'entropy':
             print("using entropy")
@@ -273,7 +279,7 @@ if __name__ == '__main__':
             maxdepth = 8
             minsampsplit = 20
             minimpuritydecrease = 0.0
-
-            rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimpuritydecrease)
-            rf.buildForest()
-            rf.testAccuracy(testingfeat, testingclass)
+            for i in range(3):
+                rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimpuritydecrease)
+                rf.buildForest()
+                rf.testAccuracy(peerfeatures, peerclass)

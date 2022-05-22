@@ -32,6 +32,7 @@ class DecisionTree:
 
         self.classifier = tree.DecisionTreeClassifier(criterion = splitmethod, min_samples_split = self.minsampsplit, max_depth = self.maxdepth, min_impurity_decrease = self.minimpuritydecrease)
         self.numfeatures = np.random.randint(2, 37)
+        #self.featureslist = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37]
         self.featureslist = random.sample(range(37), self.numfeatures)
         self.usedfeatures = self.features.iloc[:, self.featureslist]
         #print(self.usedfeatures.to_markdown())
@@ -49,8 +50,6 @@ class DecisionTree:
 
     def renderTree(self, collist):
         tree.plot_tree(self.classifier)
-        if(collist.size() < 1):
-            collist = None
         dot_data = tree.export_graphviz(self.classifier, out_file=None, feature_names = collist, filled=True)
         graph = graphviz.Source(dot_data)
         graph.render(str(self.id))
@@ -264,7 +263,10 @@ if __name__ == '__main__':
         #     dec = DecisionTree(featuresdummy,classification,splitmethod,None,2,0.0,1)
         #     dec.buildTree()
         #     dec.renderTree(list(featuresdummy.columns))
-        #     #print(list(featuresdummy.columns))
+        #     feat_importance = dec.classifier.feature_importances_
+        #     print(str(feat_importance))
+        #     for name, importance in zip(list(featuresdummy.columns), dec.classifier.feature_importances_):
+        #         print(name, importance)
 
         else:
             #OPTIMAL VALUES FOUND FROM findOptimal():

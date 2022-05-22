@@ -167,48 +167,48 @@ class RandomForest:
         print("+++++++++++++++++++++++++++++++++++++++++++++++++++\n")
 
 
-def findOptimal(forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass):
-    #print("Hi")
-    #Max Depth:
-    maxdepthoptions = [2, 5, 8, 11, None]
-    #TEST:
-    #maxdepthoptions = [2, None]
+    def findOptimal(forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass):
+        #print("Hi")
+        #Max Depth:
+        maxdepthoptions = [2, 5, 8, 11, None]
+        #TEST:
+        #maxdepthoptions = [2, None]
 
-    #Min Samples Split
-    #minsamplessplitoptions = [2, 5]
-    minsamplessplitoptions = [2, 5, 10, 20]
+        #Min Samples Split
+        #minsamplessplitoptions = [2, 5]
+        minsamplessplitoptions = [2, 5, 10, 20]
 
-    #Min Impurity Decrease
-    minimpuritydecreaserange = [0, 20, 2]
+        #Min Impurity Decrease
+        minimpuritydecreaserange = [0, 20, 2]
 
 
-    #Default
-    print("Building Default")
-    currOptimalTree = RandomForest(args.forest, trainingfeat, trainingclass, method, None, 2, 0.0)
-    currOptimalTree.buildForest()
+        #Default
+        print("Building Default")
+        currOptimalTree = RandomForest(args.forest, trainingfeat, trainingclass, method, None, 2, 0.0)
+        currOptimalTree.buildForest()
 
-    currOptimalTree.testAccuracy(testingfeat, testingclass)
+        currOptimalTree.testAccuracy(testingfeat, testingclass)
 
-    totaltreestesting = len(maxdepthoptions) * len(minsamplessplitoptions) * 10
-    print("Total Number of Forests to Create: " + str(totaltreestesting))
+        totaltreestesting = len(maxdepthoptions) * len(minsamplessplitoptions) * 10
+        print("Total Number of Forests to Create: " + str(totaltreestesting))
 
-    for maxdepth in maxdepthoptions:
-        for minsampsplit in minsamplessplitoptions:
-            for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
-                minimp = minimpuritydecrease / 10
-                rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
-                rf.buildForest()
-                rf.testAccuracy(testingfeat, testingclass)
+        for maxdepth in maxdepthoptions:
+            for minsampsplit in minsamplessplitoptions:
+                for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
+                    minimp = minimpuritydecrease / 10
+                    rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
+                    rf.buildForest()
+                    rf.testAccuracy(testingfeat, testingclass)
 
-                if rf.accuracy > currOptimalTree.accuracy:
-                    currOptimalTree = rf
+                    if rf.accuracy > currOptimalTree.accuracy:
+                        currOptimalTree = rf
 
-    print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
-    print("Optimal Methods: ")
-    print("Max Depth: + " + str(currOptimalTree.maxdepth))
-    print("Min Sample Split: " + str(currOptimalTree.minsampsplit))
-    print("Minimum Impurity Decrease: " + str(currOptimalTree.minimpuritydecrease))
-    print("Time to Build the Forest: " + str(currOptimalTree.buildtime))
+        print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
+        print("Optimal Methods: ")
+        print("Max Depth: + " + str(currOptimalTree.maxdepth))
+        print("Min Sample Split: " + str(currOptimalTree.minsampsplit))
+        print("Minimum Impurity Decrease: " + str(currOptimalTree.minimpuritydecrease))
+        print("Time to Build the Forest: " + str(currOptimalTree.buildtime))
 
 
 if __name__ == '__main__':
@@ -249,7 +249,8 @@ if __name__ == '__main__':
             print("error: Method needs to be either gini or entropy")
             sys.exit()
 
-        findoptimalswitch = True
+        findoptimalswitch = false
+
 
         if findoptimalswitch == True:
             findOptimal(args.forest, trainingfeat, trainingclass, method, testingfeat, testingclass)

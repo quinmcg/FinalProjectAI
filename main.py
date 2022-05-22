@@ -8,6 +8,7 @@ from tabulate import tabulate
 import random
 import sys, getopt
 import argparse
+import time
 
 # List of Tuning Parameters as Global Variables (To Do/Decide on)
 # Global so that we keep them constant for all decision trees
@@ -32,11 +33,12 @@ class DecisionTree:
 
     def buildTree(self):
         if (self.id % 10 == 0):
-            print("Building Tree #" + str(self.id))
-     
+            print("Progress: built " + str(self.id) + " trees...")
+
         self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
         self.classifier.fit(self.featuresarray, self.classifarray)
+
 
     def renderTree(self):
         tree.plot_tree(self.classifier)
@@ -60,6 +62,8 @@ class RandomForest:
         self.method = method
 
     def buildForest(self):
+        self.starttime = time.time()
+
         print("Building Forest using " + self.method + " method")
 
         for tree in range(self.numtrees):
@@ -77,6 +81,10 @@ class RandomForest:
             newtree.buildTree()
             #newtree.renderTree()
             self.forest.append(newtree)
+        self.endtime = time.time()
+        self.buildtime = self.endtime - self.starttime
+        print("Completed Building Forest in " + str(self.buildtime) + " seconds")
+
         #print(len(self.forest))
 
     def classfiyObservation(self, observation, method):
@@ -185,4 +193,3 @@ if __name__ == '__main__':
 
 
         rf.testAccuracy(testingfeat, testingclass)
-

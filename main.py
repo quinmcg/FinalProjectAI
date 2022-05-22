@@ -13,23 +13,29 @@ import time
 # List of Tuning Parameters as Global Variables (To Do/Decide on)
 # Global so that we keep them constant for all decision trees
 
-minSplit = 50
+#minSplit = 50
 maxnumfeatures = 17 #calculated without dummies
 forestsize = 300
 
 class DecisionTree:
 
-    def __init__(self, features, classification, method, id):
+    def __init__(self, features, classification, splitmethod, maxdepth, minsampsplit, id):
         self.features = features
         #print(features.to_markdown())
         self.classification = classification
-        self.classifier = tree.DecisionTreeClassifier(criterion = method, min_samples_split = minSplit)
+
+        #Tuning Parameters
+        self.maxdepth = maxdepth
+        self.minsampsplit = minsampsplit
+
+        self.classifier = tree.DecisionTreeClassifier(criterion = splitmethod, min_samples_split = self.minsampsplit, max_depth = self.maxdepth)
         self.numfeatures = np.random.randint(2, 17)
         self.featureslist = random.sample(range(17), self.numfeatures)
         #print(self.featureslist)
         self.usedfeatures = self.features.iloc[:, self.featureslist]
         #print(self.usedfeatures.to_markdown())
         self.id = id
+
 
     def buildTree(self):
         if (self.id % 10 == 0):
@@ -54,17 +60,19 @@ class DecisionTree:
 
 class RandomForest:
 
-    def __init__(self, numtrees, trainingfeat, trainingclass, method):
+    def __init__(self, numtrees, trainingfeat, trainingclass, method, maxdepth, minsampsplit):
         self.forest = []
         self.numtrees = numtrees
         self.trainingfeat = trainingfeat
         self.trainingclass = trainingclass
-        self.method = method
+        self.splitmethod = method
+        self.maxdepth = maxdepth
+        self.minsampsplit = minsampsplit
 
     def buildForest(self):
         self.starttime = time.time()
 
-        print("Building Forest using " + self.method + " method")
+        print("Building Forest using " + self.splitmethod + " method")
 
         for tree in range(self.numtrees):
             tempclassification = pd.DataFrame()
@@ -77,7 +85,7 @@ class RandomForest:
                 tempclassification = pd.concat([tempclassification, currclass], axis = 0)
                 tempfeatures = pd.concat([tempfeatures, currfeatures], sort=False, axis = 0)
 
-            newtree = DecisionTree(tempfeatures, tempclassification, self.method, tree)
+            newtree = DecisionTree(tempfeatures, tempclassification, self.splitmethod, self.maxdepth, self.minsampsplit, tree)
             newtree.buildTree()
             #newtree.renderTree()
             self.forest.append(newtree)
@@ -113,12 +121,12 @@ class RandomForest:
             return round((vote0+vote1)/self.numtrees)
 
     def testAccuracy(self, testingfeat, testingclass):
-        self.predictionaccuracy = []
+        #self.predictionaccuracy = []
                                 # Prediction, Guess
-        numcorrect_pos = 0      #   1, 1
-        numcorrect_neg = 0      #   0, 0
-        numwrong_pos = 0        #   0, 1
-        numwrong_neg = 0        #   1, 0
+        self.numcorrect_pos = 0      #   1, 1
+        self.numcorrect_neg = 0      #   0, 0
+        self.numwrong_pos = 0        #   0, 1
+        self.numwrong_neg = 0        #   1, 0
 
         #print(testingclass.to_markdown())
 
@@ -128,27 +136,65 @@ class RandomForest:
             predictclass = self.classfiyObservation(observation, 1)
             #print("(" + str(predictclass) + ", " + str(obsclassactual) + ")")
             if predictclass == 1 and obsclassactual == 1:
-                numcorrect_pos += 1
+                self.numcorrect_pos += 1
             elif predictclass == 0 and obsclassactual == 0:
-                numcorrect_neg += 1
+                self.numcorrect_neg += 1
             elif predictclass == 1 and obsclassactual == 0:
-                numwrong_neg += 1
+                self.numwrong_neg += 1
             elif predictclass == 0 and obsclassactual == 1:
-                numwrong_pos += 1
-        accuracy = (numcorrect_neg + numcorrect_pos) / len(testingclass)
+                self.numwrong_pos += 1
+
+        self.accuracy = (self.numcorrect_neg + self.numcorrect_pos) / len(testingclass)
+        self.printAccuracy()
+
+    def printAccuracy(self):
         print("\n\nOVERALL FOREST STATISTICS\n=====================")
         print("Number of Trees: " + str(self.numtrees))
-        print("Method Type: " + str(self.method))
-        print("TOTAL ACCURACY: " + str(accuracy))
+        print("Method Type: " + str(self.splitmethod))
+        print("TOTAL ACCURACY: " + str(self.accuracy))
         print("\nDETAILED ACCURACY STATISTICS\n=====================")
-        print("True Positives: " + str(numcorrect_pos))
-        print("True Negatives: " + str(numcorrect_neg))
-        print("False Positives: " + str(numwrong_neg))
-        print("False Negatives: " + str(numwrong_pos))
+        print("True Positives: " + str(self.numcorrect_pos))
+        print("True Negatives: " + str(self.numcorrect_neg))
+        print("False Positives: " + str(self.numwrong_neg))
+        print("False Negatives: " + str(self.numwrong_pos))
         print("+++++++++++++++++++++++++++++++++++++++++++++++++++\n")
 
 
+def findOptimal(forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass):
+    print("Hi")
+    #Max Depth:
+    #maxdepthoptions = [2, 5, 8, 11, None]
+    #TEST:
+    maxdepthoptions = [2, None]
 
+    #Min Samples Split
+    minsamplessplitoptions = [2, 5]
+    #minsamplessplitoptions = [2, 5, 10, 20]
+
+    #Min Impurity Decrease
+    minimpuritydecreaserange = [0, 0.2, 0.02]
+
+    #CCP Alpha
+    ccpalpharange = [0, 0.2, 0.02]
+
+    #Default
+    print("Building Default")
+    currOptimalTree = RandomForest(args.forest, trainingfeat, trainingclass, method, None, 2)
+    currOptimalTree.buildForest()
+
+    currOptimalTree.testAccuracy(testingfeat, testingclass)
+
+    for maxdepth in maxdepthoptions:
+        for minsampsplit in minsamplessplitoptions:
+            rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit)
+            rf.buildForest()
+            rf.testAccuracy(testingfeat, testingclass)
+
+            if rf.accuracy > currOptimalTree.accuracy:
+                currOptimalTree = rf
+
+    print("\n\n\nOptimal Accuracy: " + str(currOptimalTree.accuracy))
+    print("Optimal Methods: " + str(currOptimalTree.maxdepth) + ", " + str(currOptimalTree.minsampsplit))
 
 if __name__ == '__main__':
 
@@ -188,8 +234,13 @@ if __name__ == '__main__':
             print("error: Method needs to be either gini or entropy")
             sys.exit()
 
-        rf = RandomForest(args.forest, trainingfeat, trainingclass, method)
-        rf.buildForest()
+        findoptimalswitch = True
 
+        if findoptimalswitch == True:
+            findOptimal(args.forest, trainingfeat, trainingclass, method, testingfeat, testingclass)
 
-        rf.testAccuracy(testingfeat, testingclass)
+        else:
+            rf = RandomForest(args.forest, trainingfeat, trainingclass, method)
+            rf.buildForest()
+
+            rf.testAccuracy(testingfeat, testingclass)

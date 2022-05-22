@@ -39,8 +39,8 @@ class DecisionTree:
 
 
     def buildTree(self):
-        #if (self.id % 10 == 0):
-            #print("Progress: built " + str(self.id) + " trees...")
+        if (self.id % 20 == 0):
+            print("Progress: built " + str(self.id) + " trees...")
 
         self.featuresarray = self.usedfeatures.to_numpy()
         self.classifarray = self.classification.to_numpy()
@@ -152,7 +152,7 @@ class RandomForest:
 
         self.accuracy = (self.numcorrect_neg + self.numcorrect_pos) / len(testingclass)
 
-        #self.printAccuracy()
+        self.printAccuracy()
 
     def printAccuracy(self):
         print("\n\nOVERALL FOREST STATISTICS\n=====================")
@@ -195,7 +195,7 @@ def findOptimal(forest, trainingfeat, trainingclass, splitmethod, testingfeat, t
     for maxdepth in maxdepthoptions:
         for minsampsplit in minsamplessplitoptions:
             for minimpuritydecrease in range(minimpuritydecreaserange[0], minimpuritydecreaserange[1], minimpuritydecreaserange[2]):
-                minimp = minimpuritydecrease / 10
+                minimp = minimpuritydecrease / 100
                 rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimp)
                 rf.buildForest()
                 rf.testAccuracy(testingfeat, testingclass)
@@ -241,21 +241,28 @@ if __name__ == '__main__':
 
         if args.entropy == 'entropy':
             print("using entropy")
-            method = "entropy"
+            splitmethod = "entropy"
         elif args.entropy == 'gini':
             print("using gini")
-            method = "gini"
+            splitmethod = "gini"
         else:
             print("error: Method needs to be either gini or entropy")
             sys.exit()
 
-        findoptimalswitch = True
+        #findoptimalswitch: TRUE <- for finding the optimal values for tuning parameters
+        #                   FALSE <- Application Use
+
+        findoptimalswitch = False
 
         if findoptimalswitch == True:
-            findOptimal(args.forest, trainingfeat, trainingclass, method, testingfeat, testingclass)
+            findOptimal(args.forest, trainingfeat, trainingclass, splitmethod, testingfeat, testingclass)
 
         else:
-            rf = RandomForest(args.forest, trainingfeat, trainingclass, method)
-            rf.buildForest()
+            #OPTIMAL VALUES FOUND FROM findOptimal():
+            maxdepth = 8
+            minsampsplit = 20
+            minimpuritydecrease = 0.0
 
+            rf = RandomForest(args.forest, trainingfeat, trainingclass, splitmethod, maxdepth, minsampsplit, minimpuritydecrease)
+            rf.buildForest()
             rf.testAccuracy(testingfeat, testingclass)

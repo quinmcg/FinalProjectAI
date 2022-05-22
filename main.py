@@ -219,7 +219,7 @@ if __name__ == '__main__':
         # testclass = pd.read_csv("testingclass.csv")
         # testfeat = pd.read_csv("testingfeat.csv")
         parser = argparse.ArgumentParser()
-        parser.add_argument("-f", "--forest", nargs='?', help="specify forrest size (default = 300)", type=int, const=300)
+        parser.add_argument("-f", "--forest", nargs='?', help="specify number of trees in forest (default = 300)", type=int, const=300)
         parser.add_argument("-u", "--user", help = "-u for user input test case", action="store_true")
         parser.add_argument("-m", "--entropy", nargs='?', help = "-m to specify method, so far entropy and gini", type=str, const="gini")
         args = parser.parse_args()
